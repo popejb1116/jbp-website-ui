@@ -1,7 +1,7 @@
 <script>
    import Header from './header/Header.svelte'
-   import Pages from './pages/Pages.svelte'
-   import Aside from './aside/Aside.svelte'
+   // DesktopNav contains Pages and Aside
+   import DesktopNav from './navigation/DesktopNav.svelte'
    import Footer from './footer/Footer.svelte'
 </script>
 
@@ -21,7 +21,6 @@
 
 <div class="grid">
    <Header/>
-   <Pages/>
-   <Aside/>
+   <DesktopNav/>
    <Footer/>
 </div>
