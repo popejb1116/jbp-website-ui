@@ -1,11 +1,6 @@
 <script>
-	export let name;
+   //export let 'prop name';
+   import GridLayout from './layout/GridLayout.svelte'
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
-
-<h1>Hello {name}!</h1>
+<GridLayout/>
