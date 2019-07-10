@@ -1,6 +1,6 @@
 <script>
    import Header from './header/Header.svelte'
-   import Content from './content/Content.svelte'
+   import Pages from './pages/Pages.svelte'
    import Aside from './aside/Aside.svelte'
    import Footer from './footer/Footer.svelte'
 </script>
@@ -13,7 +13,7 @@
       grid-template-rows: 15vh auto 10vh;
       grid-template-areas: 
          " head head head head head head head head head head head head "
-         " .... cont cont cont cont cont cont cont cont asid asid .... "
+         " .... page page page page page page page page asid asid .... "
          " foot foot foot foot foot foot foot foot foot foot foot foot "
       ;
    }
@@ -21,7 +21,7 @@
 
 <div class="grid">
    <Header/>
-   <Content/>
+   <Pages/>
    <Aside/>
    <Footer/>
 </div>
