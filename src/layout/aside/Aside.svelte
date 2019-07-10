@@ -1,1 +1,10 @@
-<h1>Aside</h1>
+<style>
+   .aside {
+      grid-area: asid;
+      background: palevioletred;
+   }
+</style>
+
+<div class="aside">
+   Aside
+</div>
