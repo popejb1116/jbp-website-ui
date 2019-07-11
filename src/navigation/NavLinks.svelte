@@ -33,5 +33,9 @@
 <nav class={linkType}>
    <Link to="/">Home</Link>
    <Link to="/education">Education</Link>
+   <Link to="/hobbies">Hobbies</Link>
+   <Link to="/musicandmovies">Music And Movies</Link>
+   <Link to="/chloe">Chloe</Link>
+   <Link to="/contact">Contact</Link>
 </nav>
 
