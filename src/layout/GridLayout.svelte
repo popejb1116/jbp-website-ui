@@ -2,6 +2,7 @@
    import Header from './header/Header.svelte'
    // DesktopNav contains Pages and Aside
    import DesktopNav from '../navigation/DesktopNav.svelte'
+   import MobileNav from '../navigation/MobileNav.svelte'
    import Footer from './footer/Footer.svelte'
 </script>
 
@@ -19,21 +20,11 @@
 
       position: relative;
    }
-
-   .test {
-      position: absolute;
-      z-index: 1;
-      top: 15vh;
-      right: 0;
-      height: 85vh;
-      width: 50vw;
-      background: rgba(0, 0, 0, 0.3);
-   }
 </style>
 
 <div class="grid">
    <Header/>
    <DesktopNav/>
-   <div class="test">Mobile Nav</div>
+   <MobileNav/>
    <Footer/>
 </div>

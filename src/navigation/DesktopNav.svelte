@@ -1,7 +1,7 @@
 <script>
-   // CONTAINS NAV ROUTES
+   // NAV ROUTES
    import Pages from '../layout/pages/Pages.svelte'
-   // CONTAINS NAV DESKTOP NAV LINKS
+   // NAV LINKS
    import Aside from '../layout/aside/Aside.svelte'
 
    import {Router} from 'svelte-routing'
