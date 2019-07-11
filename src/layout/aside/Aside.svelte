@@ -11,5 +11,5 @@
 </style>
 
 <div class="aside">
-   <NavLinks linkType={"desktop"}/>
+   <NavLinks linkType={"aside"}/>
 </div>

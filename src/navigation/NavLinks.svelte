@@ -4,8 +4,7 @@
 </script>
 
 <style>
-   
-   .desktop {
+   .aside {
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-evenly;
@@ -20,15 +19,15 @@
       justify-content: space-evenly;
       align-items: center;
 
-      position: absolute;
-      z-index: 1;
-      top: 15vh;
-      right: 0;
       height: 85vh;
       width: 50vw;
       background: rgba(0, 0, 0, 0.3);
+
+      position: absolute;
+      top: 15vh;
+      right: 0;
+      z-index: 1;
    }
-   
 </style>
 
 <nav class={linkType}>
