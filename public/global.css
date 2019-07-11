@@ -1,7 +1,7 @@
 html, body {
 	position: relative;
 	width: 100%;
-	height: 100%;
+   height: 100%;
 }
 
 body {
@@ -59,4 +59,10 @@ button:active {
 
 button:focus {
 	border-color: #666;
+}
+
+/* GLOBAL THEME */
+* {
+   --theme-primary: #20A39E;
+   --theme-secondary: #B2FFA9;
 }
