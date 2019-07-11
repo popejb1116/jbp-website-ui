@@ -1,3 +1,7 @@
+<script>
+   import NavLinks from '../../navigation/NavLinks.svelte'
+</script>
+
 <style>
    .aside {
       grid-area: asid;
@@ -6,5 +10,5 @@
 </style>
 
 <div class="aside">
-   Aside
+   <NavLinks linkType={"aside"}/>
 </div>

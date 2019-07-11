@@ -1,7 +1,8 @@
 <script>
    import Header from './header/Header.svelte'
-   import Content from './content/Content.svelte'
-   import Aside from './aside/Aside.svelte'
+   // AsideNav CONTAINS Pages AND Aside
+   import AsideNav from '../navigation/AsideNav.svelte'
+   import MobileNav from '../navigation/MobileNav.svelte'
    import Footer from './footer/Footer.svelte'
 </script>
 
@@ -13,15 +14,18 @@
       grid-template-rows: 15vh auto 10vh;
       grid-template-areas: 
          " head head head head head head head head head head head head "
-         " .... cont cont cont cont cont cont cont cont asid asid .... "
+         " .... page page page page page page page page asid asid .... "
          " foot foot foot foot foot foot foot foot foot foot foot foot "
       ;
+
+      /* MOBILE NAVIGATION IMPLEMENTATION */
+      position: relative;
    }
 </style>
 
 <div class="grid">
    <Header/>
-   <Content/>
-   <Aside/>
+   <AsideNav/>
+   <MobileNav/>
    <Footer/>
 </div>
