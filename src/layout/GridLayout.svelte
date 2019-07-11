@@ -18,6 +18,7 @@
          " foot foot foot foot foot foot foot foot foot foot foot foot "
       ;
 
+      /* MOBILE NAVIGATION IMPLEMENTATION */
       position: relative;
    }
 </style>
