@@ -1,7 +1,7 @@
 <script>
    import Header from './header/Header.svelte'
    // DesktopNav contains Pages and Aside
-   import DesktopNav from './navigation/DesktopNav.svelte'
+   import DesktopNav from '../navigation/DesktopNav.svelte'
    import Footer from './footer/Footer.svelte'
 </script>
 
