@@ -16,11 +16,24 @@
          " .... page page page page page page page page asid asid .... "
          " foot foot foot foot foot foot foot foot foot foot foot foot "
       ;
+
+      position: relative;
+   }
+
+   .test {
+      position: absolute;
+      z-index: 1;
+      top: 15vh;
+      right: 0;
+      height: 85vh;
+      width: 50vw;
+      background: rgba(0, 0, 0, 0.3);
    }
 </style>
 
 <div class="grid">
    <Header/>
    <DesktopNav/>
+   <div class="test">Mobile Nav</div>
    <Footer/>
 </div>
