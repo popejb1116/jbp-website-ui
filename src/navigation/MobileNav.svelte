@@ -1,10 +1,35 @@
 <script>
-   import {Router} from 'svelte-routing'
+   import {Router, Link} from 'svelte-routing'
    export let url = ""
    import NavLinks from './NavLinks.svelte'
 </script>
 
+<style>
+   .mobile {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      height: 85vh;
+      width: 50vw;
+      background: rgba(0, 0, 0, 0.3);
+
+      position: absolute;
+      top: 15vh;
+      right: 0;
+      z-index: 1;
+   }
+</style>
+
 <Router url="{url}">
-   <NavLinks linkType={"mobile"}/>
+   <nav class='mobile'>
+      <Link to="/">Home</Link>
+      <Link to="/education">Education</Link>
+      <Link to="/hobbies">Hobbies</Link>
+      <Link to="/musicandmovies">Music And Movies</Link>
+      <Link to="/chloe">Chloe</Link>
+      <Link to="/contact">Contact</Link>
+   </nav>
 </Router>
 
