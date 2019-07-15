@@ -23,6 +23,19 @@
       /* MOBILE NAVIGATION IMPLEMENTATION */
       position: relative;
    }
+
+   /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */
+   @media (max-width: 768px) {
+      .grid {
+         grid-template-rows: 15vh auto 10vh 10vh;
+         grid-template-areas: 
+            " head head head head head head head head head head head head "
+            " .... page page page page page page page page page page .... "
+            " .... asid asid asid asid asid asid asid asid asid asid .... "
+            " foot foot foot foot foot foot foot foot foot foot foot foot "
+         ;
+      }
+   }
 </style>
 
 <div class="grid">

@@ -14,9 +14,17 @@
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: flex-start;
 
       height: 60%;
+
+      padding: 0 0.5vw;
+   }
+   /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */
+   @media (max-width: 768px) {
+      .aside-nav {
+         display: none;
+      }
    }
 </style>
 
