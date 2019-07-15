@@ -2,7 +2,7 @@
    import {Router, Link} from 'svelte-routing'
    import NavLinks from './NavLinks.svelte'
    export let url = ""
-   
+
    // DEFINES IF MOBILE NAV IS DISPLAYED
    import {displayMobileNav} from '../stores/MobileNavDisplay'
 </script>
@@ -22,9 +22,12 @@
       top: 15vh;
       right: 0;
       z-index: 1;
+
+      transition: transform 1s;
+      transform: translateX(0%);
    }
    .mobile.hidden {
-      width: 10vw;
+      transform: translateX(100%);
    }
 </style>
 
