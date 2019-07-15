@@ -7,5 +7,5 @@
 </script>
 
 <button on:click={toggle}>
-Toggle Nav
+   Toggle Nav
 </button>

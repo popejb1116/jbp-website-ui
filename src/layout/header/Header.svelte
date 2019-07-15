@@ -1,7 +1,8 @@
 <script>
-   import { getContext } from 'svelte'
+   import { onMount } from 'svelte'
    import {displayMobileNav} from '../../stores/MobileNavDisplayer.js'
    import MobileNavToggle from '../../stores/MobileNavToggle.svelte'
+
 </script>
 
 <style>
@@ -10,9 +11,24 @@
       background: var(--theme-primary);
       color: var(--theme-secondary);
    }
+
+   #box {
+      background: red;
+      height: 5vh;
+      width: 10vw;
+      transition: width 2s;
+   }
+   #box.wider {
+      width: 20vw;
+   }
 </style>
 
 <div class="header">
    <MobileNavToggle/>
-   <h1>Current Display Status: {$displayMobileNav}</h1>
+   <button 
+      id="box"
+      class="{$displayMobileNav ? ('wider') : ('')}"
+   >
+      {$displayMobileNav ? ("Hide Nav") : ("Show Nav")}
+   </button>
 </div>
