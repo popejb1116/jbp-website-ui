@@ -1,7 +1,10 @@
 <script>
    import {Router, Link} from 'svelte-routing'
-   export let url = ""
    import NavLinks from './NavLinks.svelte'
+   export let url = ""
+   
+   // DEFINES IF MOBILE NAV IS DISPLAYED
+   import {displayMobileNav} from '../stores/MobileNavDisplay'
 </script>
 
 <style>
@@ -20,10 +23,13 @@
       right: 0;
       z-index: 1;
    }
+   .mobile.hidden {
+      width: 10vw;
+   }
 </style>
 
 <Router url="{url}">
-   <nav class='mobile'>
+   <nav class="{$displayMobileNav ? ('mobile') : ('mobile hidden')}">
       <Link to="/">Home</Link>
       <Link to="/education">Education</Link>
       <Link to="/hobbies">Hobbies</Link>

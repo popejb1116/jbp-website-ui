@@ -1,11 +1,11 @@
 <script>
-   import {displayMobileNav} from './MobileNavDisplayer.js'
+   import {displayMobileNav} from './MobileNavDisplay'
 
    function toggle() {
-      displayMobileNav.update(prev => !prev)
+      displayMobileNav.update(state => !state)
    }
 </script>
 
 <button on:click={toggle}>
-   Toggle Nav
+   Toggle Mobile Nav
 </button>

@@ -1,7 +1,5 @@
 <script>
    import Header from './header/Header.svelte'
-   // AsideNav CONTAINS Pages AND Aside
-   // import AsideNav from '../navigation/AsideNav.svelte'
    import Aside from './aside/Aside.svelte'
    import Pages from './pages/Pages.svelte'
    import MobileNav from '../navigation/MobileNav.svelte'
@@ -42,6 +40,6 @@
    <Header/>
    <Aside/>
    <Pages/>
-   <!-- <MobileNav/> -->
+   <MobileNav/>
    <Footer/>
 </div>
