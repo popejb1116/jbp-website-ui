@@ -8,7 +8,7 @@
 <style>
    .aside {
       grid-area: asid;
-      background: var(--theme-primary);
+      background: var(--theme-secondary);
       margin: 0.5rem;
       border-radius: 5px;
    }

@@ -14,7 +14,7 @@
 <style>
    .pages {
       grid-area: page;
-      background: palegreen;
+      background: transparent;
    }
 </style>
 

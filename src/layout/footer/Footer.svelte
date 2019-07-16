@@ -1,7 +1,7 @@
 <style>
    .footer {
       grid-area: foot;
-      background: palegoldenrod;
+      background: var(--theme-primary);
    }
 </style>
 
