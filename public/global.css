@@ -65,4 +65,5 @@ button:focus {
 * {
    --theme-primary: #20A39E;
    --theme-secondary: #B2FFA9;
+   --theme-accent: #FF5A5F;
 }

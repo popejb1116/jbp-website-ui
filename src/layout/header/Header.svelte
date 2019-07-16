@@ -9,11 +9,15 @@
       grid-area: head;
 
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
-      background: var(--theme-primary);
-      color: var(--theme-secondary);
+      background: linear-gradient(
+         to bottom right, 
+         var(--theme-primary), 
+         var(--theme-secondary)
+      );
+      color: var(--theme-accent);
    }
 </style>
 
