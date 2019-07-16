@@ -23,5 +23,5 @@
    id="toggle"
    on:click={toggle}
 >
-   Toggle Mobile Nav
+   toggle
 </button>
