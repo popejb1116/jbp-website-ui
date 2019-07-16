@@ -61,6 +61,29 @@ button:focus {
 	border-color: #666;
 }
 
+/* CUSTOM SVELTE-ROUTER LINK STYLING */
+
+/* <style>
+   a {
+      color: var(--theme-primary);
+      
+      margin: 0.5rem 0;
+
+      font-size: 1.25rem;
+      font-weight: bolder;
+      letter-spacing: 0.1rem;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+   }
+
+   @media (max-width: 1000px) {
+      a {
+         font-size: 1rem;
+      }
+   }
+</style> */
+
+
 /* GLOBAL THEME */
 * {
    --theme-primary: #20A39E;
