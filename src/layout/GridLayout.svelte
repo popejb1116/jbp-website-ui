@@ -11,7 +11,7 @@
       display: grid;
       height: 100vh;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 15vh auto 10vh;
+      grid-template-rows: 15vh 75vh 10vh;
       grid-template-areas: 
          " head head head head head head head head head head head head "
          " .... page page page page page page page page asid asid .... "
@@ -25,11 +25,10 @@
    /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */
    @media (max-width: 768px) {
       .grid {
-         grid-template-rows: 15vh auto 10vh 10vh;
+         grid-template-rows: 15vh 75vh 10vh;
          grid-template-areas: 
             " head head head head head head head head head head head head "
             " .... page page page page page page page page page page .... "
-            " .... asid asid asid asid asid asid asid asid asid asid .... "
             " foot foot foot foot foot foot foot foot foot foot foot foot "
          ;
       }
