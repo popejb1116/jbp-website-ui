@@ -15,7 +15,7 @@
 
       height: 85vh;
       width: 50vw;
-      background: rgba(0, 0, 0, 0.3);
+      background: white;
 
       position: absolute;
       top: 15vh;

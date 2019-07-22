@@ -6,12 +6,10 @@
       align-items: center;
 
       width: auto;
-      min-height: 50vh;
+      min-height: auto;
       
       background: var(--theme-primary);
-
-      margin: 0.75rem 0.25rem;
-
+      margin: 0.75rem 0;
       border-radius: 5px;
    }   
 </style>
