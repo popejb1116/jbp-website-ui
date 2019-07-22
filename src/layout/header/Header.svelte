@@ -19,7 +19,7 @@
          var(--theme-primary), #F0ADC3
       ); */
       background: white;
-      box-shadow: 1px 2px 5px var(--theme-primary);      
+      box-shadow: -6px 2px 5px var(--theme-primary);      
    }
 </style>
 

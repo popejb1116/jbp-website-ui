@@ -4,9 +4,14 @@
 </script>
 
 <style>
-   img{
+   img {
       width: 100%;
       height: auto;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+   }
+   p {
+      color: white;
    }
 </style>
 

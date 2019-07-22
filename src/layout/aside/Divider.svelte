@@ -2,7 +2,7 @@
    div { 
       background: var(--theme-primary);
       height: 1px;
-      width: 90%;
+      width: 75%;
    }
 </style>
 

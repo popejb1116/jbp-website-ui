@@ -7,10 +7,12 @@
 
       width: auto;
       min-height: 50vh;
+      
+      background: var(--theme-primary);
 
       margin: 0.75rem 0.25rem;
 
-      background: rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
    }   
 </style>
 
