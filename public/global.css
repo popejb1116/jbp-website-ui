@@ -86,7 +86,7 @@ button:focus {
 
 /* GLOBAL THEME */
 * {
-   --theme-primary: #20A39E;
-   --theme-secondary: #B2FFA9;
-   --theme-accent: #FF5A5F;
+   --theme-primary: #4AC8D3;
+   --theme-primary: #FF5A5F;
+   --theme-primary: #D81E5B;
 }

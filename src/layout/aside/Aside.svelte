@@ -3,6 +3,7 @@
    export let url = ""
 
    import Logo from './Logo.svelte'
+   import Divider from './Divider.svelte'
 </script>
 
 <style>
@@ -14,7 +15,8 @@
       justify-content: flex-start;
       align-items: center;
       
-      background: var(--theme-secondary);
+      background: transparent;
+      /* border-left: solid 1px var(--theme-primary); */
    }
    .aside-nav {
       display: flex;
@@ -27,7 +29,7 @@
    }
    /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */
    @media (max-width: 768px) {
-      .aside-nav {
+      .aside {
          display: none;
       }
    }
@@ -35,6 +37,7 @@
 
 <div class="aside">
    <Logo/>
+   <Divider/>
    <Router url="{url}">
       <nav class='aside-nav'>
          <Link to="/">Home</Link>
@@ -45,4 +48,5 @@
          <Link to="/contact">Contact</Link>
       </nav>
    </Router>
+   <Divider/>
 </div>

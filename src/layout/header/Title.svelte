@@ -1,9 +1,13 @@
 <style>
-   h1 {
+   div {
+      display: flex;
+      align-items: center;
       color: var(--theme-primary);
-      font-size: 3rem;
+      height: 4rem;
+      font-size: 2.5rem;
       font-weight: bolder;
+      font-family: 'Ubuntu', sans-serif;
    }
 </style>
 
-<h1>Jonathan Pope</h1>
+<div>Jonathan Pope</div>

@@ -12,12 +12,14 @@
       justify-content: center;
       align-items: center;
 
-      background: linear-gradient(
-         to bottom right, 
-         var(--theme-primary), 
-         var(--theme-secondary)
-      );
       color: var(--theme-accent);
+
+      /* background: linear-gradient(
+         to bottom right,
+         var(--theme-primary), #F0ADC3
+      ); */
+      background: white;
+      box-shadow: 1px 2px 5px var(--theme-primary);      
    }
 </style>
 

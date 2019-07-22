@@ -3,11 +3,15 @@
 </script>
 
 <style>
-   h1 {
+   div {
+      display: flex;
+      align-items: center;
       color: var(--theme-primary);
-      font-weight: bolder;
+      height: 15vh;
+      font-size: 2.5rem;
+      font-weight: bold;
       font-family: 'Ubuntu', sans-serif;
    }
 </style>
 
-<h1>JBP</h1>
+<div>JBP</div>

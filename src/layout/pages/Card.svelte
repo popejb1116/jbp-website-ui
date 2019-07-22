@@ -5,14 +5,12 @@
       justify-content: flex-start;
       align-items: center;
 
-      width: 100%;
+      width: auto;
       min-height: 50vh;
 
-      /* margin: 0.5rem;
-      border-radius: 5px;
-      border: solid var(--theme-secondary) 5px; */
+      margin: 0.75rem 0.25rem;
 
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.05);
    }   
 </style>
 
