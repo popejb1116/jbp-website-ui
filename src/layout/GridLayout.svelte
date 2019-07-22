@@ -13,13 +13,14 @@
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 15vh 75vh 10vh;
       grid-template-areas: 
-         " head head head head head head head head head head head head "
-         " .... page page page page page page page page asid asid .... "
-         " foot foot foot foot foot foot foot foot foot foot foot foot "
+         " head head head head head head head head head asid asid asid "
+         " page page page page page page page page page asid asid asid "
+         " foot foot foot foot foot foot foot foot foot asid asid asid "
       ;
 
       /* MOBILE NAVIGATION IMPLEMENTATION */
       position: relative;
+      overflow-x: hidden;
    }
 
    /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */

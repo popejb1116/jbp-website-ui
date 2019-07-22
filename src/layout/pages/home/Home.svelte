@@ -6,10 +6,7 @@
 <style>
    img{
       width: 100%;
-      height: 40%;
-
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      height: auto;
    }
 </style>
 

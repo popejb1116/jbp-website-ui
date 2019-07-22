@@ -1,6 +1,6 @@
 <script>
    import {displayMobileNav} from '../../stores/MobileNavDisplay'
-   import Logo from './Logo.svelte'
+   import Title from './Title.svelte'
    import MobileNavToggle from '../../stores/MobileNavToggle.svelte'
 </script>
 
@@ -9,7 +9,7 @@
       grid-area: head;
 
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
 
       background: linear-gradient(
@@ -22,6 +22,6 @@
 </style>
 
 <div class="header">
-   <Logo/>
+   <Title/>
    <MobileNavToggle/>
 </div>
