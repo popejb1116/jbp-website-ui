@@ -14,7 +14,14 @@
 <style>
    .pages {
       grid-area: page;
-      background: palegreen;
+      
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      
+      /* background: url(/images/pages-background.svg) center center fixed;
+      background-size: cover; */
    }
 </style>
 

@@ -1,7 +1,7 @@
 html, body {
 	position: relative;
-	width: 100%;
-   height: 100%;
+	width: 100vw;
+   height: 100vh;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-a {
+/* a {
 	color: rgb(0,100,200);
 	text-decoration: none;
 }
@@ -23,7 +23,7 @@ a:hover {
 
 a:visited {
 	color: rgb(0,80,160);
-}
+} */
 
 label {
 	display: block;
@@ -61,8 +61,44 @@ button:focus {
 	border-color: #666;
 }
 
+/* CUSTOM SVELTE-ROUTER LINK STYLING */
+a {
+   display: flex;
+   align-items: center;
+   
+   padding: 0.5rem;
+   width: 75%;
+   
+   font-size: 1.25rem;
+   font-weight: bolder;
+   font-family: 'Ubuntu', sans-serif;
+   letter-spacing: 0.1rem;
+   text-decoration: none;
+
+   transition: transform 0.25s, color 0.25s;
+   transform: translateX(0);
+   color: var(--theme-primary);
+}
+a:hover {
+   transform: translate(8px);
+   color: var(--theme-accent);
+}
+a:focus {
+   outline: none;
+   background: var(--theme-primary-glass);
+   border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+   a {
+      font-size: 1rem;
+   }
+}
+
+
 /* GLOBAL THEME */
 * {
-   --theme-primary: #20A39E;
-   --theme-secondary: #B2FFA9;
+   --theme-primary: #BC6985;
+   --theme-primary-glass: rgba(188, 105, 133, 0.1);
+   --theme-accent: #7AE7C7;
 }
