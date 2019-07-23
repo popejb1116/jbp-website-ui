@@ -16,7 +16,6 @@
       align-items: center;
       
       background: transparent;
-      /* border-left: solid 1px var(--theme-primary); */
    }
    .aside-nav {
       display: flex;

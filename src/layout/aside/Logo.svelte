@@ -10,8 +10,8 @@
       height: 15vh;
       font-size: 2.5rem;
       font-weight: bold;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Pacifico', cursive;
    }
 </style>
 
-<div>JBP</div>
+<div>JBP inc</div>
