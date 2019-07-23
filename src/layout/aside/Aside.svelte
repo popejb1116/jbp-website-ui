@@ -24,7 +24,7 @@
       justify-content: space-evenly;
       align-items: flex-start;
 
-      height: 75%;
+      height: 60vh;
       padding: 0 1rem;
    }
    /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */

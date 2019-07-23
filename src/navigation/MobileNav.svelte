@@ -15,7 +15,7 @@
 
       height: 85vh;
       width: 50vw;
-      background: white;
+      background: var(--theme-accent);
 
       position: absolute;
       top: 15vh;

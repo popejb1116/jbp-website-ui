@@ -7,8 +7,8 @@
    img {
       width: 100%;
       height: auto;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
    }
    div {
       color: white;
@@ -19,6 +19,8 @@
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: flex-start;
+
+      border-top: solid 3px var(--theme-accent);
    }
    .top {
       margin-top: 2rem;

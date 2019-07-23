@@ -10,7 +10,9 @@
       
       background: var(--theme-primary);
       margin: 0.75rem 0;
-      border-radius: 5px;
+      border-radius: 2px;
+      box-shadow: 2px 2px 4px black;
+      box-shadow: 2px 2px 4px var(--theme-primary);
    }   
 </style>
 
