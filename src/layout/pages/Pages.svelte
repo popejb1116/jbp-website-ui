@@ -20,6 +20,8 @@
       justify-content: flex-start;
       align-items: center;
       
+      width: 100%;
+
       /* background: url(/images/pages-background.svg) center center fixed;
       background-size: cover; */
    }
