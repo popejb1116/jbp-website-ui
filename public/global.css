@@ -109,5 +109,7 @@ a:focus {
 * {
    --theme-primary: #BC6985;
    --theme-primary-glass: rgba(188, 105, 133, 0.1);
-   --theme-accent: #7AE7C7;
+   --theme-accent: #6B818C;
+   --theme-accent: #035E7B;
+   
 }
