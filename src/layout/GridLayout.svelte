@@ -14,7 +14,7 @@
       grid-template-rows: 15vh auto 10vh;
       grid-template-areas: 
          " head head head head head head head head head asid asid asid "
-         " page page page page page page page page page asid asid asid "
+         " .... page page page page page page page .... asid asid asid "
          " foot foot foot foot foot foot foot foot foot asid asid asid "
       ;
 

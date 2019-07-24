@@ -13,13 +13,9 @@
    div {
       color: white;
       padding: 0.5rem 1rem;
+      font-size: 1.5rem;
    }
    .wrapper {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-
       border-top: solid 3px var(--theme-accent);
    }
    .top {
@@ -32,7 +28,6 @@
       padding: 0;
    }
    .strike-through {
-      text-align: left;
       text-decoration: line-through;
    }
    .bottom {
@@ -41,7 +36,7 @@
 </style>
 
 <Card>
-   <img src={hero} alt="hero">
+   <img src={hero} alt="card-hero_family">
 
    <div class="wrapper">
       <div class="top">

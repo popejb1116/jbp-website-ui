@@ -5,7 +5,7 @@
       justify-content: flex-start;
       align-items: center;
 
-      width: auto;
+      width: 100%;
       min-height: auto;
       
       background: var(--theme-primary);
