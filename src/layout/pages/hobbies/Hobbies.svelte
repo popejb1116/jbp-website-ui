@@ -5,7 +5,7 @@
 <style>
    #card {
       display: flex;
-
+      
       background: var(--theme-primary);
       width: 95%;
       height: auto;
@@ -65,11 +65,40 @@
       color: white;
       font-size: 1.1rem;
    }
+
+   @media (max-width: 1100px) {
+      #card {
+         display: flex;
+         flex-flow: column nowrap;
+         justify-content: flex-start;
+         align-items: center;
+      }
+      #card.center-me {
+         align-self: center;
+      }
+      #card.reverse-me {
+         flex-flow: column-reverse nowrap;
+      }
+      img.center-me {
+         border: none;
+         border-bottom: solid 3px var(--theme-accent);
+         
+         border-radius: none;
+         border-top-left-radius: 2px;
+         border-top-right-radius: 2px;
+      }
+      .img-wrapper {
+         flex: 1 1 50%;
+      }
+      .card-body {
+         flex: 1 1 50%;
+      }
+   }
 </style>
 
-<div id="card" class="left">
+<div id="card" class="left center-me">
    <div class="img-wrapper">
-      <img src={pic} alt="bjj img" class="left">
+      <img src={pic} alt="bjj img" class="left center-me">
    </div>
    
    <div class="card-body">
@@ -83,7 +112,7 @@
    </div>
 </div>
 
-<div id="card" class="right">
+<div id="card" class="right center-me reverse-me">
    <div class="card-body">
       <div class="title">Disc Golf</div>
       <div class="text">
@@ -95,7 +124,7 @@
    </div>
 
    <div class="img-wrapper">
-      <img src={pic} alt="disc golf img" class="right">
+      <img src={pic} alt="disc golf img" class="right center-me">
    </div>
 </div>
 
