@@ -24,7 +24,7 @@
    }
 
    .img-wrapper {
-      flex: 1 1 25%;
+      flex: 1;
       align-self: stretch;
    }
    img {
@@ -44,15 +44,12 @@
    }
 
    .card-body {
+      flex: 2;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
-
-      flex: 3 3 75%;
-
       padding: 1rem;
    }
-
    .title {
       align-self: center;
       color: var(--theme-accent);
@@ -60,7 +57,6 @@
       font-size: 1.5rem;
       font-weight: bold;
    }
-
    .text {
       color: white;
       font-size: 1.1rem;
@@ -88,10 +84,7 @@
          border-top-right-radius: 2px;
       }
       .img-wrapper {
-         flex: 1 1 50%;
-      }
-      .card-body {
-         flex: 1 1 50%;
+         max-height: 40vh;
       }
    }
 </style>
@@ -127,6 +120,3 @@
       <img src={pic} alt="disc golf img" class="right center-me">
    </div>
 </div>
-
-<!-- GO BACK TO HERE!!! -->
-<!-- AGAIN -->
