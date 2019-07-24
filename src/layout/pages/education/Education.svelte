@@ -17,12 +17,20 @@
       font-size: 1.5rem;
    }
    .wrapper {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
       border-top: solid 3px var(--theme-accent);
    }
    .title {
+      align-self: center;
       color: var(--theme-accent);
-      font-size: 2rem;
-      font-weight: 900;      
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 1px white;      
    }
    .bottom {
       margin-bottom: 2rem;

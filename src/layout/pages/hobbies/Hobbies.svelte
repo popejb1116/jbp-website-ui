@@ -56,6 +56,8 @@
       margin-bottom: 1rem;
       font-size: 1.5rem;
       font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 1px white;    
    }
    .text {
       color: white;

@@ -71,45 +71,10 @@ button:focus {
    font-family: 'Ubuntu', sans-serif;
 }
 
-/* CUSTOM SVELTE-ROUTER LINK STYLING */
-/* a {
-   display: flex;
-   align-items: center;
-   
-   padding: 0.5rem;
-   width: 75%;
-   
-   font-size: 1.25rem;
-   font-weight: bolder;
-   letter-spacing: 0.1rem;
-   text-decoration: none;
-
-   transition: transform 0.25s, color 0.25s;
-   transform: translateX(0);
-   color: var(--theme-primary);
-}
-a:hover {
-   transform: translate(8px);
-   color: var(--theme-accent);
-}
-a:focus {
-   outline: none;
-   background: var(--theme-primary-glass);
-   border-radius: 5px;
-} */
-
-@media (max-width: 1000px) {
-   a {
-      font-size: 1rem;
-   }
-}
-
-
 /* GLOBAL THEME */
 * {
    --theme-primary: #BC6985;
    --theme-primary-glass: rgba(188, 105, 133, 0.1);
    --theme-accent: #6B818C;
    --theme-accent: #035E7B;
-   
 }
