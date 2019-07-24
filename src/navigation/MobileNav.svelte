@@ -1,6 +1,6 @@
 <script>
    import {Router, Link} from 'svelte-routing'
-   import NavLinks from './NavLinks.svelte'
+   // import NavLinks from './NavLinks.svelte'
    export let url = ""
 
    import {displayMobileNav} from '../stores/MobileNavDisplay'
@@ -13,11 +13,13 @@
       justify-content: space-evenly;
       align-items: center;
 
-      height: 85vh;
-      width: 50vw;
+      height: 70vh;
+      width: 65vw;
       background: var(--theme-accent);
 
-      position: absolute;
+      border-radius: 2px;
+
+      position: fixed;
       top: 15vh;
       right: 0;
       z-index: 1;
@@ -32,12 +34,12 @@
 
 <Router url="{url}">
    <nav class="{$displayMobileNav ? ('mobile') : ('mobile hidden')}">
-      <Link to="/">Home</Link>
-      <Link to="/education">Education</Link>
-      <Link to="/hobbies">Hobbies</Link>
-      <Link to="/musicandmovies">Music And Movies</Link>
-      <Link to="/chloe">Chloe</Link>
-      <Link to="/contact">Contact</Link>
+      <Link type="mobile" to="/">Home</Link>
+      <Link type="mobile" to="/education">Education</Link>
+      <Link type="mobile" to="/hobbies">Hobbies</Link>
+      <Link type="mobile" to="/musicandmovies">Music And Movies</Link>
+      <Link type="mobile" to="/chloe">Chloe</Link>
+      <Link type="mobile" to="/contact">Contact</Link>
    </nav>
 </Router>
 
