@@ -39,12 +39,12 @@
    <Divider/>
    <Router url="{url}">
       <nav class='aside-nav'>
-         <Link to="/">Home</Link>
-         <Link to="/education">Education</Link>
-         <Link to="/hobbies">Hobbies</Link>
-         <Link to="/musicandmovies">Music And Movies</Link>
-         <Link to="/chloe">Chloe</Link>
-         <Link to="/contact">Contact</Link>
+         <Link type="aside" to="/">Home</Link>
+         <Link type="aside" to="/education">Education</Link>
+         <Link type="aside" to="/hobbies">Hobbies</Link>
+         <Link type="aside" to="/musicandmovies">Music And Movies</Link>
+         <Link type="aside" to="/chloe">Chloe</Link>
+         <Link type="aside" to="/contact">Contact</Link>
       </nav>
    </Router>
    <Divider/>
