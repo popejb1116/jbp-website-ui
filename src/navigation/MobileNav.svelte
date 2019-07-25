@@ -1,6 +1,5 @@
 <script>
    import {Router, Link} from 'svelte-routing'
-   // import NavLinks from './NavLinks.svelte'
    export let url = ""
 
    import {displayMobileNav} from '../stores/MobileNavDisplay'

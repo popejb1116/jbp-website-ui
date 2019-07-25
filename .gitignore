@@ -1,3 +1,13 @@
 .DS_Store
-node_modules
+
+# RECURSIVE FILTER ALLOWING A SPECIFIC FILE TO BE TRACKED
+node_modules/*
+!node_modules/svelte-routing
+
+node_modules/svelte-routing/*
+!node_modules/svelte-routing/src
+
+node_modules/svelte-routing/src/*
+!node_modules/svelte-routing/src/Link.svelte
+
 public/bundle.*
