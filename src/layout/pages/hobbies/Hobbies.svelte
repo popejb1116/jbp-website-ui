@@ -45,15 +45,12 @@
 
    .card-body {
       flex: 2;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
       padding: 1rem;
    }
    .title {
-      align-self: center;
       color: var(--theme-accent);
       margin-bottom: 1rem;
+      text-align: center;
       font-size: 2rem;
       font-weight: bold;
       font-family: 'Pacifico', cursive;
@@ -88,6 +85,9 @@
       .img-wrapper {
          max-height: 40vh;
       }
+      img {
+         max-height: 40vh;
+      }
    }
 </style>
 
@@ -97,10 +97,10 @@
    </div>
    
    <div class="card-body">
-      <div class="title">Brazilian Jiu Jitsu</div>
+      <div class="title">Brazilian Jiu-Jitsu</div>
       <div class="text">
-         Brazilian Jiu Jitsu is a grappling martial art rooted in Japanese Judo which was expanded upon in Brazil by the Gracie family. 
-         Brazilian Jiu Jitsu, or BJJ, eventually made its way to the US in the late 1970s by Rorion Gracie when he moved to California. 
+         Brazilian Jiu-Jitsu is a grappling martial art rooted in Japanese Judo which was expanded upon in Brazil by the Gracie family. 
+         Brazilian Jiu-Jitsu, or BJJ, eventually made its way to the US in the late 1970s by Rorion Gracie when he moved to California. 
          Rorion, along with brothers Rolyer, Rickson and Royce steadily increased BJJ’s place among practiced martial arts in the US. 
          BJJ experienced its largest gain in popularity after Royce Gracie used his family’s techniques to win multiple Ultimate Fighting Championships in the early 90s.
       </div>
