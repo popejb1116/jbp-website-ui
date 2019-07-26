@@ -1,14 +1,26 @@
 <script>
-   let pic = '/images/card-img_uncc-campus.jpg'
+   let bjj = '/images/card_hobbies_bjj.jpg'
+   let bjj_placeholder = '/images/placeholders/card_hobbies_bjj_ph.jpg'
+
+   let dg = '/images/card_hobbies_disc-golf.jpg'
+   let dg_placeholder = '/images/placeholders/card_hobbies_disc-golf_ph.jpg'
+
+   /* HIDE PLACEHOLDERS */
+   let hideClass = ""
+   window.onload = () => {
+      hideClass = " hide"
+   }
+
 </script>
 
 <style>
    #card {
       display: flex;
-      
       background: var(--theme-primary);
+      
+      /* ALLOWS SPACE FOR LEFT/RIGHT SHIFTING */
       width: 95%;
-      height: auto;
+      height: 100%;
 
       margin: 0.75rem 0;
       border-radius: 2px;
@@ -26,11 +38,17 @@
    .img-wrapper {
       flex: 1;
       align-self: stretch;
+      position: relative;
+      min-height: 35vh;
    }
    img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+      position: absolute;
+
+      /* HIDE PLACEHOLDERS */
+      transition: opacity 1s;
    }
    img.left {
       border-right: solid 3px var(--theme-accent);
@@ -41,6 +59,9 @@
       border-left: solid 3px var(--theme-accent);
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
+   }
+   img.hide {
+      opacity: 0;
    }
 
    .card-body {
@@ -93,7 +114,12 @@
 
 <div id="card" class="left center-me">
    <div class="img-wrapper">
-      <img src={pic} alt="bjj img" class="left center-me">
+      <img src={bjj} class="left center-me" alt="bjj-img">
+      <img 
+         src={bjj_placeholder} 
+         class={"left center-me" + hideClass} 
+         alt="bjj-placeholder"
+      >
    </div>
    
    <div class="card-body">
@@ -119,6 +145,11 @@
    </div>
 
    <div class="img-wrapper">
-      <img src={pic} alt="disc golf img" class="right center-me">
+      <img src={dg} class="right center-me" alt="bjj-img">
+      <img 
+         src={dg_placeholder} 
+         class={"right center-me" + hideClass} 
+         alt="bjj-placeholder"
+      >
    </div>
 </div>
