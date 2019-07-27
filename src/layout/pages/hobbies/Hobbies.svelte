@@ -1,15 +1,42 @@
 <script>
-   let bjj = '/images/card_hobbies_bjj.jpg'
+   let bjj_img = '/images/card_hobbies_bjj.jpg'
    let bjj_placeholder = '/images/placeholders/card_hobbies_bjj_ph.jpg'
 
-   let dg = '/images/card_hobbies_disc-golf.jpg'
+   let dg_img = '/images/card_hobbies_disc-golf.jpg'
    let dg_placeholder = '/images/placeholders/card_hobbies_disc-golf_ph.jpg'
 
+   
    /* HIDE PLACEHOLDERS */
    let hideClass = ""
-   window.onload = () => {
+   const registerObject = {
+      bjj: false,
+      dg: false
+   }
+   const register = event => {
+      let id = event.target.id
+      let type = event.type
+
+      if (type==='load') {
+         registerObject[id]=true
+      }
+      // FALLBACK TO HIDING PLACEHOLDERS, EVEN IF IMG YET TO LOAD
+      else {
+         hideAllPlaceholders()
+      }
+
+      // HIDE ALL PLACEHOLDERS AT THE SAME TIME ONCE THEY'RE ALL LOADED
+      if (registerObject.bjj && registerObject.dg) {
+         hideAllPlaceholders()
+      }
+   }
+   const hideAllPlaceholders = () => {
       hideClass = " hide"
    }
+
+   // BACKUP
+   // window.onload = () => {
+   //    hideClass = " hide"
+   // }
 
 </script>
 
@@ -49,6 +76,10 @@
 
       /* HIDE PLACEHOLDERS */
       transition: opacity 1s;
+   }
+   /* HIDE ALT TEXT DURING FETCH */
+   img:-moz-loading {
+      visibility: hidden;
    }
    img.left {
       border-right: solid 3px var(--theme-accent);
@@ -114,7 +145,14 @@
 
 <div id="card" class="left center-me">
    <div class="img-wrapper">
-      <img src={bjj} class="left center-me" alt="bjj-img">
+      <img 
+         src={bjj_img}
+         id="bjj" 
+         class="left center-me" 
+         alt="bjj-img"
+         on:load={register}
+         on:error={register}   
+      >
       <img 
          src={bjj_placeholder} 
          class={"left center-me" + hideClass} 
@@ -145,7 +183,14 @@
    </div>
 
    <div class="img-wrapper">
-      <img src={dg} class="right center-me" alt="bjj-img">
+      <img 
+         src={dg_img}
+         id="dg" 
+         class="right center-me" 
+         alt="bjj-img"
+         on:load={register}
+         on:error={register}   
+      >
       <img 
          src={dg_placeholder} 
          class={"right center-me" + hideClass} 
