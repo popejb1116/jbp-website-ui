@@ -5,7 +5,6 @@
    let dg_img = '/images/card_hobbies_disc-golf.jpg'
    let dg_placeholder = '/images/placeholders/card_hobbies_disc-golf_ph.jpg'
 
-   
    /* HIDE PLACEHOLDERS */
    let hideClass = ""
    const registerObject = {
@@ -32,12 +31,6 @@
    const hideAllPlaceholders = () => {
       hideClass = " hide"
    }
-
-   // BACKUP
-   // window.onload = () => {
-   //    hideClass = " hide"
-   // }
-
 </script>
 
 <style>

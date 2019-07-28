@@ -1,111 +1,168 @@
 <script>
-   import Card from '../Card.svelte'
-   let hero = '/images/card-hero_family.jpg'
+   let hero_family = '/images/card-hero_family.jpg'
+   let temp_ph = '/images/placeholders/card_hobbies_bjj_ph.jpg'
+
+   let hideClass
+   const hidePlaceholder = () => {
+      hideClass = "hide"
+   }
 </script>
 
 <style>
-   img {
+   .card {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
       width: 100%;
-      height: auto;
+      height: 100%;
+
+      background: var(--theme-primary);
+      margin: 0.75rem 0;
+      border-radius: 2px;
+      box-shadow: 2px 2px 4px var(--theme-primary);
+   }
+   .img-wrapper {
+      flex: 1;
+      align-self: stretch;
+      position: relative;
+      min-height: 35vh;
+      max-height: 40vh;
+   }
+   img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: 40vh;
+      position: absolute;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
+
+      /* HIDE PLACEHOLDERS */
+      transition: opacity 1s;
    }
-   div {
-      color: white;
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem;
+   /* HIDE ALT TEXT DURING FETCH */
+   img:-moz-loading {
+      visibility: hidden;
    }
-   .wrapper {
+   img.hide {
+      opacity: 0;
+   }
+
+   .card-body {
+      flex: 2;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
       border-top: solid 3px var(--theme-accent);
    }
-   .top {
-      margin-top: 2rem;
+   .text {
+      align-self: flex-start;
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
    }
-   .stacker {
-      padding: 0.5rem 1rem;
+   .stack {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 1rem;
    }
-   .stacked {
-      padding: 0;
+   .slice {
+      margin: 0;
    }
-   .strike-through {
+   .line-through {
       text-decoration: line-through;
-   }
-   .bottom {
-      margin-bottom: 2rem;
    }
 </style>
 
-<Card>
-   <img src={hero} alt="card-hero_family">
 
-   <div class="wrapper">
-      <div class="top">
-      Hello there, you've reached the webpage of Jonathan Pope, glad you're here. 
-      I’m a software developer that really enjoys JS related technology, especially tools like React and Svelte. 
-      Before my recent transition to software development I was a chemist at a few pharmaceutical companies. Geez, spiel much… 
-      Essentially, I’m just another nerd, let’s be real here.
+<div class="card">
+   <div class="img-wrapper">
+      <img 
+         src={hero_family}
+         id="hero_family" 
+         alt="hero_family"
+         on:load={hidePlaceholder}
+      >
+      <img 
+         src={temp_ph} 
+         class={hideClass} 
+         alt="temp_ph"
+      >
+   </div>
+   
+   <div class="card-body">
+      
+      <div class="text">
+         Hello there, you've reached the webpage of Jonathan Pope, glad you're here. 
+         I’m a software developer that really enjoys JS related technology, especially tools like React and Svelte. 
+         Before my recent transition to software development I was a chemist at a few pharmaceutical companies. Geez, spiel much… 
+         Essentially, I’m just another nerd, let’s be real here.
       </div>
       
-      <div>But why go on and on about yourself one might ask? 
-      I’m currently seeking a full time position so I feel somewhat obliged to toot my horn. 
-      Now that I’ve explained it with text it’s somehow even lamer. Onward.
+      <div class="text">
+         But why go on and on about yourself one might ask? 
+         I’m currently seeking a full time position so I feel somewhat obliged to toot my horn. 
+         Now that I’ve explained it with text it’s somehow even lamer. Onward.
       </div>
 
-      <div>
-      So I’m a nerd, yes. But what makes me different, at least in a way that’s beneficial to a potential employer? 
-      I have a deep and honest belief in treating people with respect and genuinely believe I can make any team to which I’m a part of better. 
-      I’ve always been able to develop honest and trusting relationships with former co-workers. 
-      The ability to work cohesively and mutualistically has revealed its true value to me over the last 10 years. 
-      It’s these criteria I strive to embody and it’s for this reason I’m needed.
+      <div class="text">
+         So I’m a nerd, yes. But what makes me different, at least in a way that’s beneficial to a potential employer? 
+         I have a deep and honest belief in treating people with respect and genuinely believe I can make any team to which I’m a part of better. 
+         I’ve always been able to develop honest and trusting relationships with former co-workers. 
+         The ability to work cohesively and mutualistically has revealed its true value to me over the last 10 years. 
+         It’s these criteria I strive to embody and it’s for this reason I’m needed.
       </div>
 
-      <div class="stacker">
-         <div class="stacked strike-through">
-         <strong>List Of Demands:</strong>
+      <div class="stack">
+         <div class="text slice line-through">
+            <strong>List Of Demands:</strong>
+         </div>
+         
+         <div class="text slice">
+            <strong>Things I’m Looking For:</strong>
          </div>
 
-         <div class="stacked">
-         <strong>Things I’m Looking For:</strong>
-         </div>
-
-         <div class="stacked">
-         Believe it or not my top criteria is not pay. 
-         While it would be dishonest to act as if this wasn’t a somewhat important variable, many other aspects of a company such as work environment and schedule flexibility are far more significant to me. 
-         So if you work with a group of motivated and considerate people I’d love to add in, please contact me. 
-         My wife now has a prime account, I need a full-time job.
-         </div>
-      </div>
-
-      <div class="stacker">
-         <div class="stacked">
-         <strong>Pro tip:</strong>
-         </div>
-
-         <div class="stacked">
-         The worst part of laundry is sorting socks, amirite? 
-         Try this, upon removing a soured pair after a long day just go ahead and roll them back together, as if you’re about to put them away. 
-         Toss ‘em in the hamper then wash and dry as usual. 
-         Now, no more finding matching pairs after washing and drying. 
-         Most importantly, you won't keep adding to your ever growing collection of unmatched singles. 
-         Those b*#tards, staring me dead in the eye from a fairly low shelf in the laundry room, knowing all too well I'll never find their sibling. 
-         I'LL KILL YOU!!!! Eh-hum.. Excuse me. 
-         You can see this is a topic I’m very passionate about.
+         <div class="text slice">
+            Believe it or not my top criteria is not pay. 
+            While it would be dishonest to act as if this wasn’t a somewhat important variable, many other aspects of a company such as work environment and schedule flexibility are far more significant to me. 
+            So if you work with a group of motivated and considerate people I’d love to add in, please contact me. 
+            My wife now has a prime account, I need a full-time job.
          </div>
       </div>
 
-      <div>
-      But you’re saying to yourself, “Jonathan, silly poor poor stupid Jonathan. 
-      Socks will not become clean if washed and dried in a tight ball. 
-      You’re a horse’s ass.” Neigh my friend. 
-      Being balled up doesn’t prevent soapy water from accessing the sock fibers, at least not to a significant extent. 
-      If you’re anything like I was before the great enlightening many individual socks were being washed and dried all wadded up anyway. 
-      This just being due to a common way of removing dirty socks by rolling it off your foot, leaving it wadded up. 
-      So try it out, I’ve been doing this for years now with many different types of socks and they always come out clean and dry.
+      <div class="stack">
+         <div class="text slice">
+            <strong>Pro tip:</strong>
+         </div>
+
+         <div class="text slice">
+            The worst part of laundry is sorting socks, amirite? 
+            Try this, upon removing a soured pair after a long day just go ahead and roll them back together, as if you’re about to put them away. 
+            Toss ‘em in the hamper then wash and dry as usual. 
+            Now, no more finding matching pairs after washing and drying. 
+            Most importantly, you won't keep adding to your ever growing collection of unmatched singles. 
+            Those b*#tards, staring me dead in the eye from a fairly low shelf in the laundry room, knowing all too well I'll never find their sibling. 
+            I'LL KILL YOU!!!! Eh-hum.. Excuse me. 
+            You can see this is a topic I’m very passionate about.
+         </div>
       </div>
 
-      <div class="bottom">
-      My gift to humanity.
+      <div class="text">
+         But you’re saying to yourself, “Jonathan, silly poor poor stupid Jonathan. 
+         Socks will not become clean if washed and dried in a tight ball. 
+         You’re a horse’s ass.” Neigh my friend. 
+         Being balled up doesn’t prevent soapy water from accessing the sock fibers, at least not to a significant extent. 
+         If you’re anything like I was before the great enlightening many individual socks were being washed and dried all wadded up anyway. 
+         This just being due to a common way of removing dirty socks by rolling it off your foot, leaving it wadded up. 
+         So try it out, I’ve been doing this for years now with many different types of socks and they always come out clean and dry.
+      </div>
+
+      <div class="text">
+         My gift to humanity.
       </div>
    </div>
-
-</Card>
+</div>
