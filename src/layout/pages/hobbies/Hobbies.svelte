@@ -1,9 +1,9 @@
 <script>
-   let bjj_img = '/images/card_hobbies_bjj.jpg'
-   let bjj_placeholder = '/images/placeholders/card_hobbies_bjj_ph.jpg'
+   let bjjImg = '/images/hobbies_card_bjj.jpg'
+   let bjjPlaceholder = '/images/placeholders/hobbies_card_bjj_placeholder.jpg'
 
-   let dg_img = '/images/card_hobbies_disc-golf.jpg'
-   let dg_placeholder = '/images/placeholders/card_hobbies_disc-golf_ph.jpg'
+   let dgImg = '/images/hobbies_card_disc-golf.jpg'
+   let dgPlaceholder = '/images/placeholders/hobbies_card_disc-golf_placeholder.jpg'
 
    /* HIDE PLACEHOLDERS */
    let hideClass = ""
@@ -34,7 +34,7 @@
 </script>
 
 <style>
-   #card {
+   .card {
       display: flex;
       background: var(--theme-primary);
       
@@ -48,10 +48,10 @@
    }
    /* PARENT, WHICH IS PAGES, IS FLEX COLUMN WHICH IS WHY CARD CAN
    ALIGN-SELF */
-   #card.left {
+   .card.left {
       align-self: flex-start;
    }
-   #card.right {
+   .card.right {
       align-self: flex-end;
    }
 
@@ -107,16 +107,16 @@
    }
 
    @media (max-width: 1100px) {
-      #card {
+      .card {
          display: flex;
          flex-flow: column nowrap;
          justify-content: flex-start;
          align-items: center;
       }
-      #card.center-me {
+      .card.center-me {
          align-self: center;
       }
-      #card.reverse-me {
+      .card.reverse-me {
          flex-flow: column-reverse nowrap;
       }
       img.center-me {
@@ -136,10 +136,10 @@
    }
 </style>
 
-<div id="card" class="left center-me">
+<div class="card left center-me">
    <div class="img-wrapper">
       <img 
-         src={bjj_img}
+         src={bjjImg}
          id="bjj" 
          class="left center-me" 
          alt="bjj-img"
@@ -147,7 +147,7 @@
          on:error={register}   
       >
       <img 
-         src={bjj_placeholder} 
+         src={bjjPlaceholder} 
          class={"left center-me" + hideClass} 
          alt="bjj-placeholder"
       >
@@ -164,7 +164,7 @@
    </div>
 </div>
 
-<div id="card" class="right center-me reverse-me">
+<div class="card right center-me reverse-me">
    <div class="card-body">
       <div class="title">Disc Golf</div>
       <div class="text">
@@ -177,7 +177,7 @@
 
    <div class="img-wrapper">
       <img 
-         src={dg_img}
+         src={dgImg}
          id="dg" 
          class="right center-me" 
          alt="bjj-img"
@@ -185,7 +185,7 @@
          on:error={register}   
       >
       <img 
-         src={dg_placeholder} 
+         src={dgPlaceholder} 
          class={"right center-me" + hideClass} 
          alt="bjj-placeholder"
       >

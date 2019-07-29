@@ -1,6 +1,7 @@
 <script>
-   let hero_family = '/images/card-hero_family.jpg'
-   let temp_ph = '/images/placeholders/card_hobbies_bjj_ph.jpg'
+
+   let familyImg = '/images/home_card_family.jpg'
+   let placeholder = '/images/placeholders/home_card_family_placeholder.jpg'
 
    let hideClass
    const hidePlaceholder = () => {
@@ -82,15 +83,14 @@
 <div class="card">
    <div class="img-wrapper">
       <img 
-         src={hero_family}
-         id="hero_family" 
-         alt="hero_family"
+         src={familyImg}
+         alt="family-img"
          on:load={hidePlaceholder}
       >
       <img 
-         src={temp_ph} 
+         src={placeholder} 
          class={hideClass} 
-         alt="temp_ph"
+         alt="family-placeholder"
       >
    </div>
    
