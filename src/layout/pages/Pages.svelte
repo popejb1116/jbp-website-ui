@@ -17,7 +17,7 @@
       
       display: flex;
       flex-flow: column nowrap;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       
       width: 100%;

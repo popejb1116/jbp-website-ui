@@ -34,6 +34,17 @@
          ;
       }
    }
+
+   @media (max-width: 500px) {
+      .grid {
+         grid-template-rows: 15vh auto 10vh;
+         grid-template-areas: 
+            " head head head head head head head head head head head head "
+            " page page page page page page page page page page page page "
+            " foot foot foot foot foot foot foot foot foot foot foot foot "
+         ;
+      }
+   }
 </style>
 
 <div class="grid">
