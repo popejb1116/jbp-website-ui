@@ -12,7 +12,8 @@
       position: absolute;
       right: 0;
    }
-   @media (min-width: 768px) {
+   /* GRIDLAYOUT HIDES ASIDE AT 768 */
+   @media (min-width: 769px) {
       #toggle {
          display: none;
       }
