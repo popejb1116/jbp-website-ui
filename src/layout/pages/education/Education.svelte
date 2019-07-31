@@ -3,7 +3,7 @@
    let unccPlaceholder = '/images/placeholders/education_card_uncc-campus_placeholder.jpg'
    
    let appImg = '/images/education_card_app-campus.jpg'
-   // let appPlaceholder = '/images/placeholders/education_card_app-campus_placeholder.jpg'
+   let appPlaceholder = '/images/placeholders/education_card_app-campus_placeholder.jpg'
 
    let hideClass
    const hidePlaceholder = () => {
@@ -16,6 +16,7 @@
       display: flex;
       flex-flow: column nowrap;
       background: var(--theme-primary);
+      width: 100%;
       margin: 0.75rem 0;
       border-radius: 2px;
       box-shadow: 2px 2px 4px var(--theme-primary);
@@ -85,7 +86,6 @@
    </div>
 </div>
 
-<!-- TODO: UPDATE PLACEHOLDER -->
 <div class="card">
    <div class="img-wrapper">
       <img 
@@ -93,7 +93,7 @@
          on:load={hidePlaceholder} 
          alt="app-campus">
       <img 
-         src={unccPlaceholder}
+         src={appPlaceholder}
          class={hideClass} 
          alt="app-placeholder"
       >
