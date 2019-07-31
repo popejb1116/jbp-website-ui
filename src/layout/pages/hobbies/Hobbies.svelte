@@ -112,6 +112,8 @@
          flex-flow: column nowrap;
          justify-content: flex-start;
          align-items: center;
+
+         width: 100%;
       }
       .card.center-me {
          align-self: center;

@@ -19,11 +19,18 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
+
+      justify-self: center;
+      align-self: center;
       
       width: 100%;
 
       /* background: url(/images/pages-background.svg) center center fixed;
       background-size: cover; */
+   }
+
+   @media (max-width: 500px) {
+      .pages {width: 94%}
    }
 </style>
 
