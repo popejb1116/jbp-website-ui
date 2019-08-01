@@ -14,8 +14,6 @@
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: center;
-      
-      background: transparent;
    }
    .aside-nav {
       display: flex;

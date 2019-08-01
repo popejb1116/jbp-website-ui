@@ -10,6 +10,8 @@
    .grid {
       display: grid;
       height: 100vh;
+      background: url('/images/bg-stripes.png') center center fixed;
+      background-size: cover;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 15vh auto 10vh;
       grid-template-areas: 
