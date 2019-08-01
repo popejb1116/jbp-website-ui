@@ -14,12 +14,8 @@
 
       color: var(--theme-accent);
 
-      /* background: linear-gradient(
-         to bottom right,
-         var(--theme-primary), #F0ADC3
-      ); */
       background: white;
-      box-shadow: -6px 2px 5px var(--theme-primary);      
+      box-shadow: 3px 3px 3px var(--theme-primary);      
    }
 </style>
 

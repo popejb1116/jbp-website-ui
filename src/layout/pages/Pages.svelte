@@ -24,9 +24,6 @@
       align-self: center;
       
       width: 100%;
-
-      /* background: url(/images/pages-background.svg) center center fixed;
-      background-size: cover; */
    }
 
    @media (max-width: 500px) {
