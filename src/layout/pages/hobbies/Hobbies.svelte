@@ -96,6 +96,7 @@
       color: var(--theme-accent);
       margin-bottom: 1rem;
       text-align: center;
+      letter-spacing: 0.3rem;
       font-size: 2rem;
       font-weight: bold;
       font-family: 'Pacifico', cursive;
