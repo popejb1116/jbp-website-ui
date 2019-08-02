@@ -1,6 +1,6 @@
 <style>
 
-   .video-card {
+   .youtube-card {
       width: 40vw;
       height: auto;
 
@@ -31,7 +31,7 @@
    }
 </style>
 
-<div class="video-card">
+<div class="youtube-card">
    <iframe 
       src="https://www.youtube.com/embed/35mFPbNE1iU" 
       frameborder="0" 
