@@ -1,3 +1,31 @@
+<script>
+
+   // TRADITIONAL CALL
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then(response => response.json())
+// .then(json => console.log(json))
+
+   // ASYNC/AWAIT EQUIVALENT
+// async function test() {
+//    let response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//    let data = await response.json()
+//    console.log(data)
+// }
+// test()
+
+let repoEndpoint = 'octocat/Hello-World'
+
+async function getRepo(endpoint) {
+   let response = await fetch('https://api.github.com/repos/' + endpoint)
+   let data = await response.json()
+   console.log(data)
+   return data
+}
+let firstRepo = getRepo(repoEndpoin)
+
+
+</script>
+
 <style>
 
    .youtube-card {
