@@ -18,7 +18,7 @@
       
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       justify-self: center;

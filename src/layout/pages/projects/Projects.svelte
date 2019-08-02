@@ -1,34 +1,17 @@
-<script>
-</script>
-
 <style>
 
    .video-card {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-
-      width: 100%;
+      width: 40vw;
       height: auto;
 
       background: var(--theme-accent);
+      box-shadow: 2px 2px 4px var(--theme-accent);
    }
-
-   .player {
-      flex: 3;
-      display: flex;
-      justify-content: flex-start;
-      align-items: stretch;
-   }
-
    iframe {
-      min-width: 40vw;
-      min-height: 30vw;
+      width: 40vw;
+      height: 24vw;
    }
-
    .body {
-      flex: 2;
-      align-self: flex-start;
       height: 100%;
       padding: 1rem;
    }
@@ -49,14 +32,11 @@
 </style>
 
 <div class="video-card">
-
-   <div class="player">
-      <iframe 
-         src="https://www.youtube.com/embed/35mFPbNE1iU" 
-         frameborder="0" 
-         title="Responsive Navbar">
-      </iframe>
-   </div>
+   <iframe 
+      src="https://www.youtube.com/embed/35mFPbNE1iU" 
+      frameborder="0" 
+      title="Responsive Navbar">
+   </iframe>
 
    <div class="body">
       <div class="title">Foyer into YouTube oblivion...</div>
@@ -65,6 +45,4 @@
          A lively responsive navbar solution using React and Styled Components.
       </div>
    </div>
-
-
 </div>
