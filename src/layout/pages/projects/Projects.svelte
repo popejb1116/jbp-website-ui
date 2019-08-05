@@ -1,33 +1,38 @@
 <script>
+   import {onMount} from 'svelte'
 
-   // TRADITIONAL CALL
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-// .then(response => response.json())
-// .then(json => console.log(json))
+   let repos
+   const getRepoStats = async(path) => {
+      try {
+         let res = await fetch(`https://api.github.com/repos/${path}`)
+         let data = await res.json()
+         let {full_name, stargazers_count, subscribers_count} = data
+         let stats = {
+            'name' : full_name,
+            'stars' : stargazers_count,
+            'subscribers' : subscribers_count
+         }
+         return stats
+      } catch (error) {
+         console.log("Error")
+      }  
+   }
 
-   // ASYNC/AWAIT EQUIVALENT
-// async function test() {
-//    let response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-//    let data = await response.json()
-//    console.log(data)
-// }
-// test()
-
-let repoEndpoint = 'octocat/Hello-World'
-
-async function getRepo(endpoint) {
-   let response = await fetch('https://api.github.com/repos/' + endpoint)
-   let data = await response.json()
-   console.log(data)
-   return data
-}
-let firstRepo = getRepo(repoEndpoin)
-
+   onMount(
+      async() => {
+         repos = await Promise.all([
+         getRepoStats('angular/angular.js'),
+         getRepoStats('facebook/react'),
+         getRepoStats('sveltejs/svelte'),
+         getRepoStats('vuejs/vue')
+      ])
+      console.log(repos)
+      }
+   )
 
 </script>
 
 <style>
-
    .youtube-card {
       width: 40vw;
       height: auto;
