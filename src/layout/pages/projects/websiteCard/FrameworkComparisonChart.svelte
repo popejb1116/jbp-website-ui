@@ -1,7 +1,8 @@
-<!-- <script>
+<script>
    import {onMount} from 'svelte'
-
    let repos
+
+   // GET INDIVIDUAL REPO STATS
    const getRepoStats = async(path) => {
       try {
          let res = await fetch(`https://api.github.com/repos/${path}`)
@@ -18,32 +19,26 @@
       }  
    }
 
-   onMount(
-      async() => {
-         repos = await Promise.all([
+   onMount(async() => {
+      
+      // GET CHART DATA
+      repos = await Promise.all([
          getRepoStats('angular/angular.js'),
          getRepoStats('facebook/react'),
          getRepoStats('sveltejs/svelte'),
          getRepoStats('vuejs/vue')
       ])
       console.log(repos)
-      }
-   )
-</script>
 
-<h1>Chart</h1> -->
+      let chartData = [repos[0].stars, repos[1].stars, repos[2].stars, repos[3].stars]
 
-
-<script>
-   import {onMount} from 'svelte'
-
-   onMount(() => {
+      // BUILD CHART VIEW
       let ctx = document.getElementById('myChart');
       let data = {
-         labels: ['Angular', 'React','Svelte','Vue'],
+         labels: ['Angular','React','Svelte','Vue'],
          datasets: [{
             label: 'Repo Stats',
-            data: [70, 370, 22, 112],
+            data: chartData,
             backgroundColor: [
                'rgba(254, 95, 85, 0.6)',
                'rgba(23, 90, 187, 0.6)',
@@ -65,7 +60,7 @@
             fontSize: 22,
             fontColor: '#fff',
             fontFamily: 'Ubuntu',
-            text: 'Repo Stats and Other Things'
+            text: 'Github Repository Star Counts'
          },
          legend: {
             position: 'left',
@@ -100,4 +95,3 @@
 <div class="chart-container">
    <canvas id="myChart"></canvas>
 </div>
-
