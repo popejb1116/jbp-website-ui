@@ -1,35 +1,5 @@
 <script>
-   import {onMount} from 'svelte'
-
-   let repos
-   const getRepoStats = async(path) => {
-      try {
-         let res = await fetch(`https://api.github.com/repos/${path}`)
-         let data = await res.json()
-         let {full_name, stargazers_count, subscribers_count} = data
-         let stats = {
-            'name' : full_name,
-            'stars' : stargazers_count,
-            'subscribers' : subscribers_count
-         }
-         return stats
-      } catch (error) {
-         console.log("Error")
-      }  
-   }
-
-   onMount(
-      async() => {
-         repos = await Promise.all([
-         getRepoStats('angular/angular.js'),
-         getRepoStats('facebook/react'),
-         getRepoStats('sveltejs/svelte'),
-         getRepoStats('vuejs/vue')
-      ])
-      console.log(repos)
-      }
-   )
-
+   import RepoStatChart from './RepoStatChart.svelte'
 </script>
 
 <style>
@@ -79,3 +49,5 @@
       </div>
    </div>
 </div>
+
+<RepoStatChart/>
