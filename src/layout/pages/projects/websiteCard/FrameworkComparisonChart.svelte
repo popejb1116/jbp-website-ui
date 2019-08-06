@@ -81,14 +81,14 @@
 
 <style>
    .chart-container {
-      width: 50vw;
-      height: auto;
       background: rgba(0, 0, 0, .8);
       padding: 1rem;
+      border-radius: 2px;
    }
    #myChart {
       width: 100%;
       height: auto;
+      border-radius: 2px;
    }
 </style>
 

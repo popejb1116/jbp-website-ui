@@ -2,6 +2,8 @@
    .youtube-card {
       width: 40vw;
       height: auto;
+      
+      margin: 0.75rem 0;
 
       background: var(--theme-accent);
       box-shadow: 2px 2px 4px var(--theme-accent);
