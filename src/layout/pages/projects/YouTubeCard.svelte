@@ -1,11 +1,12 @@
 <style>
    .youtube-card {
+      align-self: flex-start;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: center;
 
-      width: 100%;
+      width: 90%;
       height: auto;
       
       margin-top: 3rem;
@@ -52,6 +53,12 @@
    .text {
       color: white;
       font-size: 1.1rem;
+   }
+
+   @media(max-width: 768px) {
+      .youtube-card {
+         width: 100%;
+      }
    }
 </style>
 

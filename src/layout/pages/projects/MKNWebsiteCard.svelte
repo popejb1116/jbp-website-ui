@@ -4,11 +4,13 @@
 
 <style>
    .card {
+      align-self: flex-end;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: flex-start;
 
+      width: 90%;
       margin: 3rem 0;
 
       background: var(--theme-primary);
@@ -59,6 +61,12 @@
       font-family: 'Pacifico', cursive;
       text-shadow: 1px 1px 1px white;      
       text-decoration: none;
+   }
+
+   @media(max-width: 768px) {
+      .card {
+         width: 100%;
+      }
    }
 </style>
 
