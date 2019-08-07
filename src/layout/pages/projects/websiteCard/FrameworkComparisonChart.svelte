@@ -28,12 +28,12 @@
          getRepoStats('sveltejs/svelte'),
          getRepoStats('vuejs/vue')
       ])
-      console.log(repos)
+      // console.log(repos)
 
       let chartData = [repos[0].stars, repos[1].stars, repos[2].stars, repos[3].stars]
 
       // BUILD CHART VIEW
-      let ctx = document.getElementById('myChart');
+      let ctx = document.getElementById('chart');
       let data = {
          labels: ['Angular','React','Svelte','Vue'],
          datasets: [{
@@ -46,10 +46,10 @@
                'rgba(204, 255, 102, 0.6)'
             ],
             borderColor: [
-               'rgba(254, 95, 85, 1)',
-               'rgba(23, 90, 187, 1)',
-               'rgba(240, 182, 127, 1)',
-               'rgba(204, 255, 102, 1)'
+               'rgba(255, 255, 255, 1)',
+               'rgba(255, 255, 255, 1)',
+               'rgba(255, 255, 255, 1)',
+               'rgba(255, 255, 255, 1)'
             ],
             borderWidth: 1
          }]
@@ -57,21 +57,22 @@
       let options = {
          title: {
             display: true,
-            fontSize: 22,
+            fontSize: 28,
             fontColor: '#fff',
             fontFamily: 'Ubuntu',
             text: 'Github Repository Star Counts'
          },
          legend: {
-            position: 'left',
+            position: 'bottom',
             labels: {
                fontSize: 20,
                fontColor: '#fff',
                fontFamily: 'Ubuntu'
             }
-         }
+         },
+         cutoutPercentage: 25
       }
-      let myChart = new Chart(ctx, {
+      let chart = new Chart(ctx, {
          type: 'pie',
          data: data,
          options: options
@@ -81,11 +82,12 @@
 
 <style>
    .chart-container {
-      background: rgba(0, 0, 0, .8);
+      background: rgba(0, 0, 0, 0.5);
       padding: 1rem;
-      border-radius: 2px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
    }
-   #myChart {
+   #chart {
       width: 100%;
       height: auto;
       border-radius: 2px;
@@ -93,5 +95,5 @@
 </style>
 
 <div class="chart-container">
-   <canvas id="myChart"></canvas>
+   <canvas id="chart"></canvas>
 </div>

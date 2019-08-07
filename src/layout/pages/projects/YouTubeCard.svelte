@@ -36,7 +36,8 @@
       padding: 1rem;
       background: var(--theme-primary);
       border-bottom-left-radius: 2px; 
-      border-bottom-right-radius: 2px; 
+      border-bottom-right-radius: 2px;
+      border-top: solid 3px var(--theme-accent); 
    }
    .title {
       color: var(--theme-accent);

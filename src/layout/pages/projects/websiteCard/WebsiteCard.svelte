@@ -20,6 +20,7 @@
    .card-body {
       padding: 1rem;
       background: var(--theme-primary);
+      border-top: solid 3px var(--theme-accent);
    }
    .title {
       text-align: center;
