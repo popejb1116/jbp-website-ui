@@ -1,7 +1,9 @@
 <script>
-   import WebsiteCard from './websiteCard/WebsiteCard.svelte'
+   import PersonalWebsiteCard from './personalWebsiteCard/PersonalWebsiteCard.svelte'
    import YouTubeCard from './YouTubeCard.svelte'
+   import MKNWebsiteCard from './MKNWebsiteCard.svelte'
 </script>
 
-<WebsiteCard />
+<PersonalWebsiteCard />
 <YouTubeCard />
+<MKNWebsiteCard />

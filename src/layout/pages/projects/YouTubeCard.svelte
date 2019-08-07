@@ -8,7 +8,7 @@
       width: 100%;
       height: auto;
       
-      margin: 0.75rem 0;
+      margin-top: 3rem;
 
       background: transparent;
       box-shadow: 2px 2px 4px var(--theme-primary);

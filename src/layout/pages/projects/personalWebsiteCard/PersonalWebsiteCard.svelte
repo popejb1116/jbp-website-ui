@@ -12,7 +12,7 @@
       width: 100%;
       height: auto;
 
-      margin: 0.75rem 0;
+      margin-top: 3rem;
       border-radius: 2px;
       box-shadow: 2px 2px 4px var(--theme-primary);
    }
@@ -35,6 +35,7 @@
    }
    .text {
       color: white;
+      margin-bottom: 1rem;
       font-size: 1.1rem;
    }
    .link {
@@ -62,7 +63,11 @@
          The pie chart above displays its Github star count, as well as the count for other popular frameworks.
          It's easy to see this framework doesn't rivial the competitors, but stars aren't everything.
          This is a highly performant framework with a minimalist syntax, and a few other tricks to boot.
-         Check out Rich Harris, author, for deeper insight.
+         Check out Rich Harris, author, for deeper insights in the link below.
+      </div>
+      <div class="text">
+         The styling and layout was built without the use of any third party CSS libraries.
+         The highly responsive nature of this website is due to the use of Grid and Flexbox CSS properties throughout.
       </div>
       <div class="link">
          <a href="https://www.youtube.com/watch?v=AdNJ3fydeao">Svelte Propaganda</a>
