@@ -30,7 +30,7 @@
       ])
       // console.log(repos)
 
-      let chartData = [repos[0].stars, repos[1].stars, repos[2].stars, repos[3].stars]
+      let chartData = repos.map(repo => repo.stars)
 
       // BUILD CHART VIEW
       let ctx = document.getElementById('chart');

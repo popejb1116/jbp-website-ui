@@ -37,7 +37,18 @@
       color: white;
       font-size: 1.1rem;
    }
-   
+   .link {
+      text-align: center;
+   }
+   a {
+      text-align: center;
+      color: var(--theme-accent);
+      width: 100%;
+      font-size: 1.1rem;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 1px white;      
+      text-decoration: none;
+   }
 </style>
 
 <div class="website-card">
@@ -47,7 +58,14 @@
          This Very Website...
       </div>
       <div class="text">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi ullam inventore non amet illo officiis laudantium nemo ratione sint dolorum veniam deleniti, quas quae accusantium doloribus dolores, eum animi?
+         I built this website using a currently emerging JS framework known as Svelte.
+         The pie chart above displays its Github star count, as well as the count for other popular frameworks.
+         It's easy to see this framework doesn't rivial the competitors, but stars aren't everything.
+         This is a highly performant framework with a minimalist syntax, and a few other tricks to boot.
+         Check out Rich Harris, author, for deeper insight.
+      </div>
+      <div class="link">
+         <a href="https://www.youtube.com/watch?v=AdNJ3fydeao">Svelte Propaganda</a>
       </div>
    </div>
 </div>
