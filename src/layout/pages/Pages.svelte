@@ -2,6 +2,7 @@
    import {Route} from 'svelte-routing'
    import Home from './home/Home.svelte'
    import Education from './education/Education.svelte'
+   import Projects from './projects/Projects.svelte'
    import Hobbies from './hobbies/Hobbies.svelte'
    import MusicAndMovies from './musicAndMovies/MusicAndMovies.svelte'
    import Chloe from './chloe/Chloe.svelte'
@@ -17,7 +18,7 @@
       
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       justify-self: center;
@@ -35,6 +36,7 @@
    <Router url="{url}">
       <Route path="/" component={Home}/>
       <Route path="/education" component={Education}/>
+      <Route path="/projects" component={Projects}/>
       <Route path="/hobbies" component={Hobbies}/>
       <Route path="/musicandmovies" component={MusicAndMovies}/>
       <Route path="/chloe" component={Chloe}/>
