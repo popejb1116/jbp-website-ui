@@ -15,7 +15,7 @@
 
       margin-top: 3rem;
       border-radius: 2px;
-      box-shadow: 2px 2px 4px var(--theme-primary);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8);
    }
 
    .card-body {
@@ -48,7 +48,6 @@
       width: 100%;
       font-size: 1.1rem;
       font-family: 'Pacifico', cursive;
-      text-shadow: 1px 1px 1px white;      
       text-decoration: none;
    }
 

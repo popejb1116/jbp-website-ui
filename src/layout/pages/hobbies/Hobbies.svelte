@@ -42,9 +42,9 @@
       width: 95%;
       height: 100%;
 
-      margin: 0.75rem 0;
+      margin: 3rem 0;
       border-radius: 2px;
-      box-shadow: 2px 2px 4px var(--theme-primary);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8);
    }
    /* PARENT, WHICH IS PAGES, IS FLEX COLUMN WHICH IS WHY CARD CAN
    ALIGN-SELF */
@@ -53,6 +53,10 @@
    }
    .card.right {
       align-self: flex-end;
+   }
+   .card.bottom {
+      margin: 0;
+      margin-bottom: 3rem;
    }
 
    .img-wrapper {
@@ -167,7 +171,7 @@
    </div>
 </div>
 
-<div class="card right center-me reverse-me">
+<div class="card right bottom center-me reverse-me">
    <div class="card-body">
       <div class="title">Disc Golf</div>
       <div class="text">

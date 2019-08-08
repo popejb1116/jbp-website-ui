@@ -15,7 +15,7 @@
 
       background: var(--theme-primary);
       border-radius: 2px;
-      box-shadow: 2px 2px 4px var(--theme-primary);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8);
    }
    .img-wrapper {
       width: 100%;
@@ -26,6 +26,7 @@
       height: 100%;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
+      border-bottom: solid 3px white;
    }
    .card-body {
       display: flex;
@@ -34,7 +35,6 @@
       align-items: flex-start;
 
       padding: 1rem;
-      border-top: solid 3px white;
    }
    .title {
       align-self: center;
@@ -59,7 +59,6 @@
       width: 100%;
       font-size: 1.1rem;
       font-family: 'Pacifico', cursive;
-      text-shadow: 1px 1px 1px white;      
       text-decoration: none;
    }
 

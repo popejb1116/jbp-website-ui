@@ -17,9 +17,13 @@
       flex-flow: column nowrap;
       background: var(--theme-primary);
       width: 100%;
-      margin: 0.75rem 0;
+      margin: 3rem 0;
       border-radius: 2px;
-      box-shadow: 2px 2px 4px var(--theme-primary);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8);
+   }
+   .card.bottom {
+      margin: 0;
+      margin-bottom: 3rem;
    }
    .img-wrapper {
       width: 100%;
@@ -86,7 +90,7 @@
    </div>
 </div>
 
-<div class="card">
+<div class="card bottom">
    <div class="img-wrapper">
       <img 
          src={appImg}

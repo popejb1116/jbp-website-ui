@@ -12,7 +12,7 @@
       margin-top: 3rem;
 
       background: transparent;
-      box-shadow: 2px 2px 4px var(--theme-primary);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8);
       border-radius: 2px;
    }
    .iframe-container {
@@ -34,6 +34,7 @@
       border-radius: 5px;
    }
    .body {
+      width: 100%;
       padding: 1rem;
       background: var(--theme-primary);
       border-bottom-left-radius: 2px; 
