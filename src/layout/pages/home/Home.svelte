@@ -60,6 +60,17 @@
       padding: 1rem;
       border-top: solid 3px var(--theme-accent);
    }
+   .title {
+      text-align: center;
+      color: var(--theme-accent);
+      
+      margin: 1rem 0;
+      
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 1px white;      
+   }
    .text {
       align-self: flex-start;
       color: white;
@@ -95,6 +106,10 @@
    </div>
    
    <div class="card-body">
+
+      <div class="title">
+         HEY-OOO!
+      </div>
       
       <div class="text">
          Hello there, you've reached the webpage of Jonathan Pope, glad you're here. 
