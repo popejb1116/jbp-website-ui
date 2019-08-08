@@ -1,13 +1,25 @@
 <style>
-   div {
-      display: flex;
-      align-items: center;
-      color: var(--theme-primary);
-      height: 4rem;
-      font-size: 2.5rem;
-      font-weight: bolder;
-      font-family: 'Ubuntu', sans-serif;
+   span {
+      display: inline-block;
+      font: bold 4rem 'Ubuntu', sans-serif;
+      vertical-align: middle;
+
+      background-image: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      background-size: 300%;
+
+      text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+      animation: title-animation 20s infinite alternate;
+   }
+
+   @keyframes title-animation{
+      0% {background-position: left;}
+      100% {background-position: right;}
    }
 </style>
 
-<div>Jonathan Pope</div>
+<span>Jonathan Pope</span>

@@ -77,4 +77,12 @@ button:focus {
    --theme-primary-glass: rgba(188, 105, 133, 0.1);
    --theme-accent: #035E7B;
    --theme-accent-glass: rgba(3, 94, 123, 0.1);
+   --gradient: linear-gradient(45deg,
+      #BC6985,
+      #C8849B,
+      #D49FB1,
+      #8CB5C3,
+      #5E98AB,
+      #035E7B
+   );
 }
