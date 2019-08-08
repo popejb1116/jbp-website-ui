@@ -27,7 +27,7 @@
    }
    .options {
       display: block;
-      width: 50%;
+      width: 75%;
    }
    .option {
       display: flex;
@@ -41,8 +41,9 @@
    }
    .text {
       color: white;
-      font-size: 1.1rem;
+      font-size: 1.5rem;
    }
+   /* TODO: CHANGE SIZES ON 768 */
 </style>
 
 <div class="contact-card">

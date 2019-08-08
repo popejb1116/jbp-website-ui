@@ -20,6 +20,8 @@
       0% {background-position: left;}
       100% {background-position: right;}
    }
+
+   /* TODO: CHANGE SIZES ON 768 */
 </style>
 
 <span>Jonathan Pope</span>
