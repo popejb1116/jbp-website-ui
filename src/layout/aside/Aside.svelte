@@ -4,6 +4,7 @@
 
    import Logo from './Logo.svelte'
    import Divider from './Divider.svelte'
+   import SocialMediaPlank from './SocialMediaPlank.svelte'
 </script>
 
 <style>
@@ -48,4 +49,5 @@
       </nav>
    </Router>
    <Divider/>
+   <SocialMediaPlank/>
 </div>
