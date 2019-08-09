@@ -1,9 +1,5 @@
 <script>
-   import {displayMobileNav} from './MobileNavDisplay'
-
-   function toggle() {
-      displayMobileNav.update(state => !state)
-   }
+   import {toggleMobileNav} from './MobileNavDisplay'
 </script>
 
 <style>
@@ -22,7 +18,7 @@
 
 <button 
    id="toggle"
-   on:click={toggle}
+   on:click={toggleMobileNav}
 >
    toggle
 </button>

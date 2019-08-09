@@ -3,6 +3,7 @@
    export let url = ""
 
    import {displayMobileNav} from '../stores/MobileNavDisplay'
+   import {toggleMobileNav} from '../stores/MobileNavDisplay'
 </script>
 
 <style>
@@ -33,12 +34,12 @@
 
 <Router url="{url}">
    <nav class="{$displayMobileNav ? ('mobile') : ('mobile hidden')}">
-      <Link type="mobile" to="/">Home</Link>
-      <Link type="mobile" to="/education">Education</Link>
-      <Link type="mobile" to="/hobbies">Hobbies</Link>
-      <Link type="mobile" to="/musicandmovies">Music And Movies</Link>
-      <Link type="mobile" to="/chloe">Chloe</Link>
-      <Link type="mobile" to="/contact">Contact</Link>
+      <Link type="mobile" to="/" on:click={toggleMobileNav}>Home</Link>
+      <Link type="mobile" to="/education" on:click={toggleMobileNav}>Education</Link>
+      <Link type="mobile" to="/hobbies" on:click={toggleMobileNav}>Hobbies</Link>
+      <Link type="mobile" to="/musicandmovies" on:click={toggleMobileNav}>Music And Movies</Link>
+      <Link type="mobile" to="/chloe" on:click={toggleMobileNav}>Chloe</Link>
+      <Link type="mobile" to="/contact" on:click={toggleMobileNav}>Contact</Link>
    </nav>
 </Router>
 
