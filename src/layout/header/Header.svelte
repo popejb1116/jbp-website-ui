@@ -20,12 +20,22 @@
 
    @media(max-width: 768px) {
       .header {
-         justify-content: space-evenly;
+         justify-content: space-between;
+      }
+      .header-box {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 50vw;
       }
    }
 </style>
 
 <div class="header">
-   <Title/>
-   <MobileNavToggle/>
+   <div class="header-box">
+      <Title/>
+   </div>
+   <div class="header-box">
+      <MobileNavToggle/>
+   </div>
 </div>

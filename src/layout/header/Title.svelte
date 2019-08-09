@@ -1,6 +1,7 @@
 <style>
    span {
       display: inline-block;
+      text-align: center;
       font: bold 4rem 'Ubuntu', sans-serif;
       vertical-align: middle;
 
@@ -26,8 +27,6 @@
          font-size: 2rem;
       }
    }
-
-   /* TODO: CHANGE SIZES ON 768 */
 </style>
 
 <span>Jonathan Pope</span>

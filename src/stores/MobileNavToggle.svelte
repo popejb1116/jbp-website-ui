@@ -11,9 +11,9 @@
 
       width: 4rem;
       height: 4rem;
-      background: transparent;
 
-      border: solid 1px red;
+      background: transparent;
+      border: none;
    }
    /* GRIDLAYOUT HIDES ASIDE AT 768 */
    @media (min-width: 769px) {
