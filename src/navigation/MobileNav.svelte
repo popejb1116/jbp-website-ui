@@ -13,14 +13,13 @@
       justify-content: space-evenly;
       align-items: center;
 
-      height: 70vh;
-      width: 65vw;
-      background: var(--theme-accent);
+      height: 100vh;
+      width: 55vw;
 
+      background: var(--theme-accent);
       border-radius: 2px;
 
       position: fixed;
-      top: 15vh;
       right: 0;
       z-index: 1;
 
