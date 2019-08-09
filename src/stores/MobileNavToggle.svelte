@@ -5,7 +5,7 @@
 </script>
 
 <style>
-   #toggle {
+   button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -13,7 +13,7 @@
       width: 4rem;
       height: 4rem;
       background: transparent;
-      
+
       border: solid 1px red;
    }
    img {
@@ -23,14 +23,13 @@
    }
    /* GRIDLAYOUT HIDES ASIDE AT 768 */
    @media (min-width: 769px) {
-      #toggle {
+      button {
          display: none;
       }
    }
 </style>
 
-<button 
-   id="toggle"
+<button
    on:click={toggleMobileNav}
 >
    <img src={navIcon} alt="nav-icon">

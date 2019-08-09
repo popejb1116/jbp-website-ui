@@ -4,6 +4,8 @@
 
    import {displayMobileNav} from '../stores/MobileNavDisplay'
    import {toggleMobileNav} from '../stores/MobileNavDisplay'
+
+   let closeIcon = '/images/icons/icon_close-mobile.svg'
 </script>
 
 <style>
@@ -14,7 +16,7 @@
       align-items: center;
 
       height: 100vh;
-      width: 55vw;
+      width: 50vw;
 
       background: var(--theme-accent);
       border-radius: 2px;
@@ -29,10 +31,25 @@
    .mobile.hidden {
       transform: translateX(calc(100% + 1px));
    }
+   
+   button {
+      width: 4rem;
+      height: 4rem;
+      background: transparent;
+
+      border: solid 1px red;
+   }
 </style>
 
 <Router url="{url}">
    <nav class="{$displayMobileNav ? ('mobile') : ('mobile hidden')}">
+      
+      <button
+         on:click={toggleMobileNav}
+      >
+         <img src={closeIcon} alt="close-icon">
+      </button>
+      
       <Link type="mobile" to="/" on:click={toggleMobileNav}>Home</Link>
       <Link type="mobile" to="/education" on:click={toggleMobileNav}>Education</Link>
       <Link type="mobile" to="/hobbies" on:click={toggleMobileNav}>Hobbies</Link>
