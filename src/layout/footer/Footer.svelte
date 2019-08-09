@@ -1,6 +1,14 @@
+<script>
+   import SocialMediaPlank from './SocialMediaPlank.svelte'
+</script>
+
 <style>
    .footer {
       grid-area: foot;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
       background: var(--theme-accent);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -8,24 +16,23 @@
       padding: 1rem;
    }
    .statement {
+      align-self: center;
       color: white;
+      width: 100%;
       font: 300 1rem 'Ubuntu';
-   }
-   .sm-icons {
-      display: none;
+      text-align: center;
    }
    @media(max-width: 768px) {
       .statement {
          font-size: 0.5rem;
       }
-      .sm-icons {display: inline;}
    }
 </style>
 
 <div class="footer">
-   <span class="statement">
+   <div class="statement">
       This webpage was soley developed and is independently maintained by Jonathan Pope.
       Please see the contact page for any related inquiries.
-   </span>
-   <span class="sm-icons">SVG SVG</span>
+   </div>
+   <SocialMediaPlank/>
 </div>
