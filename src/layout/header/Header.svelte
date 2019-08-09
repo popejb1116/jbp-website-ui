@@ -17,6 +17,12 @@
       background: white;
       box-shadow: 3px 3px 3px var(--theme-primary);      
    }
+
+   @media(max-width: 768px) {
+      .header {
+         justify-content: space-evenly;
+      }
+   }
 </style>
 
 <div class="header">

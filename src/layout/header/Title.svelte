@@ -21,6 +21,12 @@
       100% {background-position: right;}
    }
 
+   @media(max-width: 768px) {
+      span {
+         font-size: 2rem;
+      }
+   }
+
    /* TODO: CHANGE SIZES ON 768 */
 </style>
 
