@@ -41,10 +41,10 @@
 </style>
 
 <div class="wrapper">
-   <a class="circle" href="https://github.com/">
+   <a class="circle" href="https://github.com/popejb1116">
       <img src={githubIcon} alt="github-icon">
    </a>
-   <a class="square" href="https://linkedin.com/">
+   <a class="square" href="https://www.linkedin.com/in/jonathan-pope-890419137/">
       <img src={linkedinIcon} alt="linkedin-icon">
    </a>
 </div>
