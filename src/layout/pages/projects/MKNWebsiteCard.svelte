@@ -38,6 +38,7 @@
    }
    .title {
       align-self: center;
+      text-align: center;
       color: var(--theme-accent);
       margin-bottom: 1rem;
       letter-spacing: 0.3rem;
@@ -50,8 +51,17 @@
       color: white;
       font-size: 1.1rem;
    }
-   .link {
+   .links {
+      display: flex;
+      justify-content: space-evenly;
       align-self: center;
+      width: auto;
+   }
+   .link {
+      padding: 0.5rem;
+   }
+   .link:hover {
+      text-decoration: underline;
    }
    a {
       align-self: center;
@@ -85,8 +95,13 @@
          It's hosted using Firebase, another tool I've come to enjoy working with.
          These two make a great team!
       </div>
-      <div class="link">
-         <a href="https://mkn-employment-law.web.app/">MKN Law</a>
+      <div class="text links">
+         <span class="link">
+            <a href="https://mkn-employment-law.web.app/">MKN Law</a>
+         </span>
+         <span class="link">
+            <a href="https://github.com/popejb1116/mkn-law">Project GitHub</a>
+         </span>
       </div>
    </div>
 </div>

@@ -39,8 +39,8 @@
       margin-bottom: 1rem;
       font-size: 1.1rem;
    }
-   .link {
-      text-align: center;
+   .link:hover {
+      text-decoration: underline;
    }
    a {
       text-align: center;
@@ -70,13 +70,18 @@
          It's easy to see this framework doesn't rivial the competitors, but stars aren't everything.
          This is a highly performant framework with a minimalist syntax, and a few other tricks to boot.
          Check out Rich Harris, author, for deeper insights in the link below.
+         <span class="link">
+            <a href="https://www.youtube.com/watch?v=AdNJ3fydeao">Svelte Propaganda</a>
+         </span>
       </div>
+      
       <div class="text">
          The styling and layout was built without the use of any third party CSS libraries.
          The highly responsive nature of this website is due to the use of Grid and Flexbox CSS properties throughout.
+         <span class="link">
+            <a href="https://github.com/popejb1116/jbp-website-ui">Project GitHub</a>
+         </span>
       </div>
-      <div class="link">
-         <a href="https://www.youtube.com/watch?v=AdNJ3fydeao">Svelte Propaganda</a>
-      </div>
+      
    </div>
 </div>
