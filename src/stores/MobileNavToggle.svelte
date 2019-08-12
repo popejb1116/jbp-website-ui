@@ -15,6 +15,10 @@
       background: transparent;
       border: none;
    }
+   img {
+      width: 100%;
+      height: 100%;
+   }
    /* GRIDLAYOUT HIDES ASIDE AT 768 */
    @media (min-width: 769px) {
       button {

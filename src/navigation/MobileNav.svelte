@@ -61,6 +61,7 @@
       <div class="links">
          <Link type="mobile" to="/" on:click={toggleMobileNav}>Home</Link>
          <Link type="mobile" to="/education" on:click={toggleMobileNav}>Education</Link>
+         <Link type="mobile" to="/projects" on:click={toggleMobileNav}>Projects</Link>
          <Link type="mobile" to="/hobbies" on:click={toggleMobileNav}>Hobbies</Link>
          <!-- <Link type="mobile" to="/musicandmovies" on:click={toggleMobileNav}>Music And Movies</Link>
          <Link type="mobile" to="/chloe" on:click={toggleMobileNav}>Chloe</Link> -->
