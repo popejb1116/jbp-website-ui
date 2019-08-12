@@ -7,11 +7,11 @@
    .contact-card {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       align-items: center;
 
       width: 100%;
-      height: 60vh;
+      height: auto;
 
       background: var(--theme-primary);
       margin: 0.75rem 0;
@@ -20,43 +20,72 @@
    }
    .title {
       color: var(--theme-accent);
+      padding: 1rem;
       font: bold 2.5rem 'Pacifico', cursive;
       text-align: center;
       text-shadow: 1px 1px 1px white;
       border-bottom: solid 3px white;      
    }
-   .options {
-      display: block;
-      width: 75%;
+   .contact-wrapper {
+      width: 100%;
+      padding: 1rem;
    }
-   .option {
+   .contact {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       width: 100%;
-      height: 5vh;
-   }
-   img {
-      height: 100%;
    }
    .text {
       color: white;
       font-size: 1.5rem;
    }
-   /* TODO: CHANGE SIZES ON 768 */
+   .left {
+      text-align: center;
+      vertical-align: middle;
+      width: 50%;
+   }
+   .right {
+      width: 50%;
+   }
+   img {
+      height: 2.5rem;
+      width: auto;
+   }
+   @media (max-width: 1024px) {
+      .text {
+         font-size: 1rem;
+      }
+   }
+   @media (max-width: 768px) {
+      .left {
+         width: 30%;
+      }
+      .right {
+         width: 70%;
+      }
+   }
+   
 </style>
 
 <div class="contact-card">
+
    <div class="title">Feel free to contact me if you have any opportunities or suggestions, thanks!</div>
-   <div class="options">
-      <div class="option">
-         <img src={emailIcon} alt="email-icon">
-         <div class="text">popejb1116@gmail.com</div>
+   
+   <div class="contact-wrapper">
+      <div class="contact">
+         <div class="left">
+            <img src={emailIcon} alt="email-icon">
+         </div>
+         <div class="text right">popejb1116@gmail.com</div>
       </div>
-      <br/>
-      <div class="option">
-         <img src={phoneIcon} alt="phone-icon">
-         <div class="text">828-461-0794</div>
+      
+      <div class="contact">
+         <div class="left">
+            <img src={phoneIcon} alt="phone-icon">
+         </div>
+         <div class="text right">828-461-0794</div>
       </div>
    </div>
+   
 </div>
