@@ -43,8 +43,8 @@
          <Link type="aside" to="/education">Education</Link>
          <Link type="aside" to="/projects">Projects</Link>
          <Link type="aside" to="/hobbies">Hobbies</Link>
-         <Link type="aside" to="/musicandmovies">Music And Movies</Link>
-         <Link type="aside" to="/chloe">Chloe</Link>
+         <!-- <Link type="aside" to="/musicandmovies">Music And Movies</Link>
+         <Link type="aside" to="/chloe">Chloe</Link> -->
          <Link type="aside" to="/contact">Contact</Link>
       </nav>
    </Router>
