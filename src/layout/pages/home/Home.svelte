@@ -169,7 +169,7 @@
       <div class="text">
          But you’re saying to yourself, “Jonathan, silly poor poor stupid Jonathan. 
          Socks will not become clean if washed and dried in a tight ball. 
-         You’re a horse’s ass.” Neigh my friend. 
+         Better ideas have left a horse's behind.” Neigh my friend. 
          Being balled up doesn’t prevent soapy water from accessing the sock fibers, at least not to a significant extent. 
          If you’re anything like I was before the great enlightening many individual socks were being washed and dried all wadded up anyway. 
          This just being due to a common way of removing dirty socks by rolling it off your foot, leaving it wadded up. 
