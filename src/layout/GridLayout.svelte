@@ -23,6 +23,10 @@
       /* MOBILE NAVIGATION IMPLEMENTATION */
       position: relative;
       overflow-x: hidden;
+
+      /* SMOOTH MOMENTUM SCROLLING ON MOBILE WEB */
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
    }
 
    /* CONVERT TO MOBILE NAV AND USE ASIDE FOR SOCIAL MEDIA LINKS ONLY */

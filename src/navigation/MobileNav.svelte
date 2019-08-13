@@ -43,7 +43,7 @@
       flex-flow: column nowrap;
       justify-content: space-evenly;
       align-items: center;
-      height: 85vh;
+      height: 75vh;
    }
 </style>
 
