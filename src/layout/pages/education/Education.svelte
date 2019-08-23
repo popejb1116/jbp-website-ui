@@ -51,7 +51,7 @@
    /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
    img.fullImg {
       opacity: 0;
-      transition: opacity 1s;
+      transition: opacity 2s;
    }
    img.revealUNCC, img.revealAPP {
       opacity: 1;
