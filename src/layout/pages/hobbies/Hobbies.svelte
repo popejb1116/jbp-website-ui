@@ -1,36 +1,28 @@
 <script>
-   let bjjImg = '/images/hobbies_card_bjj.jpg'
    let bjjPlaceholder = '/images/placeholders/hobbies_card_bjj_placeholder.jpg'
+   let bjjImg = '/images/hobbies_card_bjj.jpg'
 
-   let dgImg = '/images/hobbies_card_disc-golf.jpg'
    let dgPlaceholder = '/images/placeholders/hobbies_card_disc-golf_placeholder.jpg'
+   let dgImg = '/images/hobbies_card_disc-golf.jpg'
 
-   /* HIDE PLACEHOLDERS */
-   let hideClass = ""
-   const registerObject = {
-      bjj: false,
-      dg: false
-   }
-   const register = event => {
-      let id = event.target.id
-      let type = event.type
+   // STATIC CSS CLASS
+   let fullImg = "fullImg"
+   let left = "left"
+   let right = "right"
+   let centerMe = "centerMe"
+   // DYNAMIC CSS CLASS
+   let revealBJJ = false 
+   let revealDG = false
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
+   const revealFullImg = e => {      
+      const {id} = e.target
+      if (id === 'bjj') {
+         revealBJJ = true
+      }else if (id === 'dg') {
+         revealDG = true
+      }
+   } 
 
-      if (type==='load') {
-         registerObject[id]=true
-      }
-      // FALLBACK TO HIDING PLACEHOLDERS, EVEN IF IMG YET TO LOAD
-      else {
-         hideAllPlaceholders()
-      }
-
-      // HIDE ALL PLACEHOLDERS AT THE SAME TIME ONCE THEY'RE ALL LOADED
-      if (registerObject.bjj && registerObject.dg) {
-         hideAllPlaceholders()
-      }
-   }
-   const hideAllPlaceholders = () => {
-      hideClass = " hide"
-   }
 </script>
 
 <style>
@@ -69,11 +61,18 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
-      position: absolute;
-
-      /* HIDE PLACEHOLDERS */
-      transition: opacity 1s;
+      position: absolute;    
    }
+
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
+   img.fullImg {
+      opacity: 0;
+      transition: opacity 2s;
+   }
+   img.revealBJJ, img.revealDG {
+      opacity: 1;
+   }
+
    /* HIDE ALT TEXT DURING FETCH */
    img:-moz-loading {
       visibility: hidden;
@@ -87,9 +86,6 @@
       border-left: solid 3px var(--theme-accent);
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
-   }
-   img.hide {
-      opacity: 0;
    }
 
    .card-body {
@@ -126,7 +122,7 @@
       .card.reverse-me {
          flex-flow: column-reverse nowrap;
       }
-      img.center-me {
+      img.centerMe {
          border: none;
          border-bottom: solid 3px var(--theme-accent);
          
@@ -146,18 +142,17 @@
 <div class="card left center-me">
    <div class="img-wrapper">
       <img 
-         src={bjjImg}
-         id="bjj" 
-         class="left center-me" 
-         alt="bjj-img"
-         on:load={register}
-         on:error={register}   
+         src={bjjPlaceholder} 
+         alt="bjj-placeholder"
+         class:left class:centerMe
       >
       <img 
-         src={bjjPlaceholder} 
-         class={"left center-me" + hideClass} 
-         alt="bjj-placeholder"
-      >
+         src={bjjImg}
+         alt="bjj-img"
+         id="bjj" 
+         class:left class:centerMe class:fullImg class:revealBJJ 
+         on:load={revealFullImg}
+      >      
    </div>
    
    <div class="card-body">
@@ -184,17 +179,16 @@
 
    <div class="img-wrapper">
       <img 
-         src={dgImg}
-         id="dg" 
-         class="right center-me" 
-         alt="bjj-img"
-         on:load={register}
-         on:error={register}   
+         src={dgPlaceholder} 
+         alt="dg-placeholder"
+         class:right class:centerMe 
       >
       <img 
-         src={dgPlaceholder} 
-         class={"right center-me" + hideClass} 
-         alt="bjj-placeholder"
+         src={dgImg}
+         alt="dg-img"
+         id="dg" 
+         class:right class:centerMe class:fullImg class:revealDG
+         on:load={revealFullImg}
       >
    </div>
 </div>
