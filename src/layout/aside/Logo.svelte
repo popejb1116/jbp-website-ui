@@ -14,4 +14,4 @@
    }
 </style>
 
-<div>JBP inc</div>
+<div>JBP</div>
