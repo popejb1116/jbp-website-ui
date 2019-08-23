@@ -5,6 +5,7 @@
 
    let fullImg = "fullImg" // STATIC CSS CLASS
    let reveal = false // DYNAMIC CSS CLASS
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
    const revealFullImg = () => {
       reveal = true
    }
@@ -43,7 +44,7 @@
       border-top-right-radius: 2px;
    }
 
-   /* REVEAL FULL IMAGE ONLY AFTER FULL LOADING */
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
    img.fullImg {
       opacity: 0;
       transition: opacity 2s;
@@ -102,7 +103,6 @@
       <img 
          src={placeholder} 
          alt="family-placeholder"
-         class="placeholder" 
       >
       <img 
          src={familyImg}
