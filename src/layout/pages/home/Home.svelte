@@ -1,12 +1,15 @@
 <script>
 
-   let familyImg = '/images/home_card_family.jpg'
    let placeholder = '/images/placeholders/home_card_family_placeholder.jpg'
+   let familyImg = '/images/home_card_family.jpg'
 
-   let hideClass
-   const hidePlaceholder = () => {
-      hideClass = "hide"
+   let fullImg = "fullImg" // STATIC CSS CLASS
+   let reveal = false // DYNAMIC CSS CLASS
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
+   const revealFullImg = () => {
+      reveal = true
    }
+
 </script>
 
 <style>
@@ -39,16 +42,20 @@
       position: absolute;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
-
-      /* HIDE PLACEHOLDERS */
-      transition: opacity 1s;
    }
+
+   /* REVEAL FULL IMAGE ONLY AFTER LOADING HAS COMPLETED */
+   img.fullImg {
+      opacity: 0;
+      transition: opacity 2s;
+   }
+   img.reveal {
+      opacity: 1;
+   }
+
    /* HIDE ALT TEXT DURING FETCH */
    img:-moz-loading {
       visibility: hidden;
-   }
-   img.hide {
-      opacity: 0;
    }
 
    .card-body {
@@ -94,15 +101,15 @@
 <div class="card">
    <div class="img-wrapper">
       <img 
-         src={familyImg}
-         alt="family-img"
-         on:load={hidePlaceholder}
-      >
-      <img 
          src={placeholder} 
-         class={hideClass} 
          alt="family-placeholder"
       >
+      <img 
+         src={familyImg}
+         alt="family-img"
+         class:reveal class:fullImg
+         on:load={revealFullImg}
+      >      
    </div>
    
    <div class="card-body">
