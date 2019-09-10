@@ -124,7 +124,7 @@
    <div class="card-body">
       <div class="title">APP</div>
       <div class="text">
-         Before attending UNCC I graduated from Appalachian State University in the Spring of 2010 with my B.S. in chemistry.
+         BEFORE attending UNCC I graduated from Appalachian State University in the Spring of 2010 with my B.S. in chemistry.
       </div>
    </div>
 </div>

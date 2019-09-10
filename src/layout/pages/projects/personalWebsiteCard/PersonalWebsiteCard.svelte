@@ -38,6 +38,7 @@
       color: white;
       margin-bottom: 1rem;
       font-size: 1.1rem;
+      line-height: 1.5rem;
    }
    .link:hover {
       text-decoration: underline;
